@@ -20,7 +20,7 @@
   <name>Hippo Forge Maven Skin</name>
   <groupId>org.onehippo.forge.mavenskin</groupId>
   <artifactId>forge-maven-skin</artifactId>
-  <version>1.01.00-SNAPSHOT</version>
+  <version>0.09.00-SNAPSHOT</version>
 
   <inceptionYear>2012</inceptionYear>
 
