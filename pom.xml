@@ -65,9 +65,9 @@
 
   <repositories>
     <repository>
-      <id>forge_mavenskin</id>
-      <name>forge_mavenskin maven 2 repository</name>
-      <url>http://forge.onehippo.org/svn/forge_mavenskin/maven2/</url>
+      <id>hippo-maven2-forge</id>
+      <name>Hippo Maven 2 Forge repository</name>
+      <url>http://maven.onehippo.com/maven2-forge/</url>
       <snapshots />
     </repository>
   </repositories>
