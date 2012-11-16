@@ -63,6 +63,15 @@
     </license>
   </licenses>
 
+  <repositories>
+    <repository>
+      <id>forge_mavenskin</id>
+      <name>forge_mavenskin maven 2 repository</name>
+      <url>http://forge.onehippo.org/svn/forge_mavenskin/maven2/</url>
+      <snapshots />
+    </repository>
+  </repositories>
+
   <build>
     <resources>
       <!-- exclude css and js since will include the minified version -->
