@@ -17,10 +17,6 @@
  * under the License.
  */
 
-jQuery( document ).ready( function()
-{
-    // initialize the dropdown menu if found
-    $( '.topbar' ).dropdown();
-
+$(document).ready(function(){
     prettyPrint();
-} );
+});
