@@ -18,15 +18,20 @@
 
   <publishDate format="d MMMM yyyy" />
 
-  <bannerLeft>
-    <name>Hippo Forge Maven Skin</name>
-  </bannerLeft>
-
   <skin>
     <groupId>org.onehippo.forge.mavenskin</groupId>
     <artifactId>forge-maven-skin</artifactId>
-    <version>0.09.00</version>
+    <version>1.01.00-SNAPSHOT</version>
   </skin>
+
+  <custom>
+    <hippoSkin>
+      <googleSearch>
+        <sitesearch />
+      </googleSearch>
+      <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+    </hippoSkin>
+  </custom>
 
   <body>
     <menu name="Menu">
@@ -39,5 +44,4 @@
     <menu ref="reports" />
 
   </body>
-
 </project>
