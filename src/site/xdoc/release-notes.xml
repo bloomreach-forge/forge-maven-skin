@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  Copyright 2012 Hippo
+  Copyright 2012-2013 Hippo
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -20,9 +20,9 @@
   </properties>
   <body>
     <section name="Release Notes">
-      <subsection name="1.01.00-SNAPSHOT">
+      <subsection name="1.01.00">
         <ul>
-          <li>Engage!</li>
+          <li><a href="https://www.a.y" >XXX</a>Engage!</li>
         </ul>
       </subsection>
     </section>
