@@ -11,10 +11,10 @@ src/main/resources/css/print.css -text
 src/main/resources/images/accessories-text-editor.png -text
 src/main/resources/images/add.gif -text
 src/main/resources/images/apache-maven-project-2.png -text
-src/main/resources/images/application-certificate.png -text
 src/main/resources/images/contact-new.png -text
 src/main/resources/images/document-properties.png -text
 src/main/resources/images/drive-harddisk.png -text
+src/main/resources/images/external_link_icon.gif -text
 src/main/resources/images/fix.gif -text
 src/main/resources/images/hipposkin/hippo-logo.png -text
 src/main/resources/images/icon_error_sml.gif -text
@@ -23,7 +23,6 @@ src/main/resources/images/icon_info_sml.gif -text
 src/main/resources/images/icon_success_sml.gif -text
 src/main/resources/images/icon_warning_sml.gif -text
 src/main/resources/images/image-x-generic.png -text
-src/main/resources/images/internet-web-browser.png -text
 src/main/resources/images/logos/build-by-maven-black.png -text
 src/main/resources/images/logos/build-by-maven-white.png -text
 src/main/resources/images/logos/maven-feather.png -text
