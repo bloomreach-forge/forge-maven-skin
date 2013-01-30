@@ -20,7 +20,7 @@
   <name>Hippo Forge Maven Skin</name>
   <groupId>org.onehippo.forge.mavenskin</groupId>
   <artifactId>forge-maven-skin</artifactId>
-  <version>1.01.01-SNAPSHOT</version>
+  <version>1.01.01</version>
 
   <inceptionYear>2012</inceptionYear>
 
@@ -38,9 +38,9 @@
   </developers>
 
   <scm>
-    <connection>scm:svn:https://forge.onehippo.org/svn/forge_mavenskin/forge_mavenskin/trunk</connection>
-    <developerConnection>scm:svn:https://forge.onehippo.org/svn/forge_mavenskin/forge_mavenskin/trunk</developerConnection>
-    <url>https://forge.onehippo.org/svn/forge_mavenskin/forge_mavenskin/trunk</url>
+    <connection>scm:svn:https://forge.onehippo.org/svn/forge_mavenskin/forge_mavenskin/tags/forge-maven-skin-1.01.01</connection>
+    <developerConnection>scm:svn:https://forge.onehippo.org/svn/forge_mavenskin/forge_mavenskin/tags/forge-maven-skin-1.01.01</developerConnection>
+    <url>https://forge.onehippo.org/svn/forge_mavenskin/forge_mavenskin/tags/forge-maven-skin-1.01.01</url>
   </scm>
 
   <distributionManagement>
