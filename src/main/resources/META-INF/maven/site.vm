@@ -782,7 +782,7 @@
             <div id="header">
                 <div id="logo">
                     <a href="http://www.onehippo.com">
-                        <img src="images/hipposkin/hippo-logo.png" alt="Hippo Logo" />
+                        <img src="/images/hipposkin/hippo-logo.png" alt="Hippo Logo" />
                     </a>
                 </div>
 
