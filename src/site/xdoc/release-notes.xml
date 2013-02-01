@@ -23,11 +23,12 @@
       <subsection name="1.01.01">
         <ul>
           <li>Fixed logo path (was wrong with nested paths)</li>
+          <li>Replace icons for external links</li>
         </ul>
       </subsection>
       <subsection name="1.01.00">
         <ul>
-          <li><a href="http://www.onehippo.com" >XXX</a>Engage!</li>
+          <li>Engage!</li>
         </ul>
       </subsection>
     </section>
