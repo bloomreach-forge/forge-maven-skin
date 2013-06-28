@@ -36,12 +36,52 @@ a {
     font-size: 14px;
 }
 
+.section h1 {
+    margin: 0 0 16px;
+}
+
+.section h2 {
+    margin: 0 0 14px;
+}
+
+.section h3 {
+    margin: 0 0 14px;
+}
+
+.section p {
+    margin: 0 0 14px;
+}
+
+.section ul, .section ol {
+    margin: 0 0 14px;
+}
+
+.section ul {
+    padding-left: 17px;
+}
+
+.section ol {
+    padding-left: 20px;
+}
+
+.section img {
+    margin: 0 0 14px;
+}
+
+ul ul, ol ul, ol ol, ol ul {
+    margin: 0;
+}
+
 #header {
     padding-top: 20px;
 }
 
 nav li a {
     text-transform: uppercase;
+}
+
+.nav-list .nav-header {
+    font-size: 13px;
 }
 
 ul {
@@ -82,7 +122,8 @@ ol.linenums {
 }
 
 #search-form #query {
-    width: 308px;
+    width: 90%;
+    padding: 4px 5%;
 }
 
 #breadcrumbs {
@@ -118,4 +159,8 @@ ol.linenums {
 
 #breadcrumbs .links a:hover {
     color: #ffffff;
+}
+
+.note {
+    color: #FF0000;
 }

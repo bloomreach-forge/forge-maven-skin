@@ -26,13 +26,11 @@
           font.
           <b>Bold</b>
           font.
-          <tt>Monospaced</tt>
-          font.
         </p>
         <p><a href="http://www.onehippo.org">Link to Hippo</a></p>
-        <p><small>This line of text is meant to be treated as fine print.</small></p>
         <p><strong>rendered as bold text</strong></p>
         <p><em>rendered as italicized text</em></p>
+        <p class="note">Note: This is a notice, used by adding class 'note' to a paragraph</p>
       </subsection>
     </section>
     <section name="Headings">

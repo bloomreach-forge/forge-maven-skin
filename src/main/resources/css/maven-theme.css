@@ -40,7 +40,7 @@ a.externalLink[href^=mailto]{background: url('../images/contact-new.png') right 
 
 li.none{list-style: none;}
 
-.search-query{background-image: url(http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-position: 0% 50%; background-repeat: no-repeat no-repeat; width:95% }
+.search-query{background-image: url(http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-position: 0% 50%; background-repeat: no-repeat no-repeat; width: auto}
 
 body.topBarEnabled{padding-top: 60px;}
 body.topBarDisabled{padding-top: 20px;}

@@ -327,7 +327,7 @@
     #if ( $decorationPublishDate && $decorationPublishDate.format )
         #set ( $format = $decorationPublishDate.format )
     #else
-        #set ( $format = "yyyy-MM-dd" )
+        #set ( $format = "d MMMM yyyy" )
     #end
 ##
     $dateFormat.applyPattern( $format )
@@ -510,7 +510,7 @@
         #set( $sitesearchValue = $project.url.substring( $startIndex, $project.url.length() ) )
     #end
 
-    <input value="$sitesearchValue" name="sitesearch" type="hidden"/>
+    <input value="" name="sitesearch" type="hidden"/>
     <input class="search-query" name="q" id="query" type="text"/>
 </form>
 <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=search-form"></script>
@@ -787,7 +787,9 @@
                 </div>
 
                 <h1>
-                    #if( $project.name && $project.name != '' )
+                    #if ($decoration.custom.getChild('hippoSkin').getChild('title') && $decoration.custom.getChild('hippoSkin').getChild('title').getValue() != '')
+                        $decoration.custom.getChild('hippoSkin').getChild('title').getValue()
+                    #elseif( $project.name && $project.name != '' )
                         $project.name
                     #else
                         $project.artifactId
@@ -854,12 +856,8 @@
         #if ( $title && $title.endsWith( "Project License" ) )
             $bodyContent
           #else
-            #if ( $decoration.custom.getChild('hippoSkin')
-            && $decoration.custom.getChild( 'hippoSkin' ).getChild( 'sourceLineNumbersEnabled' )
-            && 'true' == $decoration.custom.getChild( 'hippoSkin' ).getChild( 'sourceLineNumbersEnabled' ).getValue() )
+            #if ( $decoration.custom.getChild('hippoSkin') )
                 #set ( $sourceStyle = "prettyprint linenums" )
-            #else
-                #set ( $sourceStyle = "prettyprint" )
             #end
 
             $bodyContent.replaceAll( "<div class=\"source\"><pre>", "<div class=\"source\"><pre class=\"$sourceStyle\">" ).replaceAll( "class=\"bodyTable\"", "class=\"table table-striped\"" )
