@@ -82,6 +82,7 @@ nav li a {
 
 .nav-list .nav-header {
     font-size: 13px;
+    color: #808080;
 }
 
 ul {
@@ -163,4 +164,10 @@ ol.linenums {
 
 .note {
     color: #FF0000;
+}
+
+.smallinfo {
+    color: #909090;
+    font-size: 12px;
+    font-weight: bold;
 }
