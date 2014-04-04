@@ -55,9 +55,10 @@
 
       <!-- Render a google search box (no box when absent) -->
       <googleSearch>
-        <!-- Setting where to do the search  -->
+        <!-- Optional setting on where to do the search (it will search on the current site if the sitesearch tag is absent) -->
         <sitesearch>http://forge_mavenskin.forge.onehippo.org/</sitesearch>
       </googleSearch>
+
   </hippoSkin>
 </custom>]]></source>
         <p>Since the Hippo Skin is based on Maven's Fluido Skin, there are also settings for Ohloh, GitHub, Twitter, Facebook and Google Plus.
