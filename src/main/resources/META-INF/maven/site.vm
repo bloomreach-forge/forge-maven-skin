@@ -808,7 +808,7 @@
 
                 <div class="links">
                     <a href="http://www.onehippo.com">Onehippo.com</a>
-                    <a href="http://www.onehippo.org">Hippo Campus</a>
+                    <a href="http://www.onehippo.org">Onehippo.org</a>
                 </div>
             </div>
         </div>
@@ -852,11 +852,15 @@
         #set ( $bodyColumnClass = $decoration.custom.getChild( 'hippoSkin' ).getChild( 'bodyColumnClass' ).getValue() )
     #end
 
-    <div id="bodyColumn" #if ( $sideBarEnabled ) class="$bodyColumnClass" #end>
+        <div id="bodyColumn" #if ( $sideBarEnabled ) class="$bodyColumnClass" #end>
         #if ( $title && $title.endsWith( "Project License" ) )
             $bodyContent
-          #else
-            #if ( $decoration.custom.getChild('hippoSkin') )
+        #else
+            #if ( $decoration.custom.getChild('hippoSkin')
+            && $decoration.custom.getChild( 'hippoSkin' ).getChild( 'sourceLineNumbersEnabled' )
+            && 'false' == $decoration.custom.getChild( 'hippoSkin' ).getChild( 'sourceLineNumbersEnabled' ).getValue() )
+                #set ( $sourceStyle = "prettyprint" )
+            #else
                 #set ( $sourceStyle = "prettyprint linenums" )
             #end
 
