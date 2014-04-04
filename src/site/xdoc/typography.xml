@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  Copyright 2012 Hippo
+  Copyright 2012-2014 Hippo
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -16,21 +16,19 @@
 -->
 <document>
   <properties>
-    <title>Release Notes</title>
+    <title>Forge Maven Skin - Typography</title>
   </properties>
   <body>
     <section name="Section with name Typography">
       <subsection name="Subsection with name Paragraphs">
-        <p>Paragraph with regular font.
-          <i>Italic</i>
-          font.
-          <b>Bold</b>
-          font.
+        <p>Paragraph with regular font.<br/>
+          Use &lt;i&gt; for <i>italic text</i> or &lt;em&gt; for <em>emphasized text</em><br/>
+          Use &lt;b&gt; for <b>bold text</b> or &lt;strong&gt; for <strong>strong text</strong>.
         </p>
-        <p><a href="http://www.onehippo.org">Link to Hippo</a></p>
-        <p><strong>rendered as bold text</strong></p>
-        <p><em>rendered as italicized text</em></p>
-        <p class="note">Note: This is a notice, used by adding class 'note' to a paragraph</p>
+        <p>Use a regular &lt;a&gt; for a <a href="http://www.onehippo.org">http link</a> or a
+          <a href="https://www.onehippo.org">https link</a> or a <a href="mailto:info@onehippo.org">mailto link</a>.</p>
+        <p class="note">This is a notice, created by adding class <code>note</code> to an element</p>
+        <p class="smallinfo">This extra information, created by adding class <code>smallinfo</code> to an element</p>
       </subsection>
     </section>
     <section name="Headings">
@@ -39,9 +37,9 @@
       <h3>h3. Heading 3</h3>
       <h4>h4. Heading 4</h4>
       <h5>h5. Heading 5</h5>
-      <h6>h6 Heading 6</h6>
+      <h6>h6. Heading 6</h6>
     </section>
-    <section name="Lists">
+    <section name="Unordered list">
       <ul>
         <li>Lorem ipsum dolor sit amet</li>
         <li>Consectetur adipiscing elit</li>
@@ -51,9 +49,16 @@
           <li>Ac tristique libero volutpat at</li>
         </ul>
       </ul>
+    </section>
+    <section name="Ordered list">
       <ol>
         <li>Lorem ipsum dolor sit amet</li>
         <li>Consectetur adipiscing elit</li>
+        <ol>
+          <li>Phasellus iaculis neque</li>
+          <li>Purus sodales ultricies</li>
+          <li>Ac tristique libero volutpat at</li>
+        </ol>
       </ol>
     </section>
     <section name="Code">
@@ -63,9 +68,10 @@
         <source><![CDATA[
   <repository>
     <id>hippo-forge</id>
-    <name>Hippo Forge maven 2 repository.</name>
+    <name>Hippo Forge Maven 2 repository.</name>
     <url>http://maven.onehippo.com/maven2-forge/</url>
   </repository>]]></source>
+        Depending on <a href="settings.html">sourceLineNumbersEnabled setting</a>, have line numbers or not.
       </p>
     </section>
   </body>

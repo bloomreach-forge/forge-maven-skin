@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  Copyright 2012-2013 Hippo
+  Copyright 2012-2014 Hippo
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 -->
 <document>
   <properties>
-    <title>Release Notes</title>
+    <title>Forge Maven Skin - Release Notes</title>
   </properties>
   <body>
     <section name="Release Notes">
