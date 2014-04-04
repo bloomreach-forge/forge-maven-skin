@@ -22,6 +22,12 @@
     <version>1.02.00</version>
   </skin>
 
+  <custom>
+    <hippoSkin>
+      <googleSearch/>
+    </hippoSkin>
+  </custom>
+
   <body>
     <menu name="Menu">
       <item name="Index" href="index.html" />

@@ -32,11 +32,36 @@
       <subsection name="Reference in site.xml">
             <p>To apply the skin to your project's site, add this reference in the Maven site descriptor, normally at <code>src/site/site.xml</code>:</p>
             <source><![CDATA[
-  <skin>
-    <groupId>org.onehippo.forge.mavenskin</groupId>
-    <artifactId>forge-maven-skin</artifactId>
-    <version>1.02.00</version>
-  </skin>]]></source>
+<skin>
+  <groupId>org.onehippo.forge.mavenskin</groupId>
+  <artifactId>forge-maven-skin</artifactId>
+  <version>1.02.00</version>
+</skin>]]></source>
+      </subsection>
+      <subsection name="Custom settings in site.xml">
+        <p>You can influence the rendering of the skin by following settings below the &lt;skin&gt; element.
+          Note that these settings are optional and have defaults when not set.</p>
+        <source><![CDATA[
+<!-- customizable publish date format, defaulting to "d MMMM yyyy" -->
+<publishDate format="yyyy-MM-dd" />
+
+<custom>
+  <hippoSkin>
+      <!-- Header title setting, defaulting to the project name from the pom -->
+      <title>Hippo Forge Maven Skin Title Override</title>
+
+      <!-- Set line numbers in source blocks, defaulting to true -->
+      <sourceLineNumbersEnabled>false</sourceLineNumbersEnabled>
+
+      <!-- Render a google search box (no box when absent) -->
+      <googleSearch>
+        <!-- Setting where to do the search  -->
+        <sitesearch>http://forge_mavenskin.forge.onehippo.org/</sitesearch>
+      </googleSearch>
+  </hippoSkin>
+</custom>]]></source>
+        <p>Since the Hippo Skin is based on Maven's Fluido Skin, there are also settings for Ohloh, GitHub, Twitter, Facebook and Google Plus.
+          Please refer to the <a href="https://maven.apache.org/skins/maven-fluido-skin">Maven Fluido Skin page</a> for documentation.</p>
       </subsection>
     </section>
   </body>

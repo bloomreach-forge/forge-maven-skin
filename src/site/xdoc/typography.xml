@@ -31,6 +31,19 @@
         <p class="smallinfo">This extra information, created by adding class <code>smallinfo</code> to an element</p>
       </subsection>
     </section>
+    <section name="Code">
+      <p>Wrap inline snippets of code with<code>&lt;code&gt;</code>.
+      </p>
+      <p>Wrap multi line pieces of code with <b>&lt;source&gt;</b>:
+        <source><![CDATA[
+  <repository>
+    <id>hippo-forge</id>
+    <name>Hippo Forge Maven 2 repository.</name>
+    <url>http://maven.onehippo.com/maven2-forge/</url>
+  </repository>]]></source>
+        Depending on <a href="usage.html">sourceLineNumbersEnabled setting</a>, have line numbers or not.
+      </p>
+    </section>
     <section name="Headings">
       <h1>h1. Heading 1</h1>
       <h2>h2. Heading 2</h2>
@@ -60,19 +73,6 @@
           <li>Ac tristique libero volutpat at</li>
         </ol>
       </ol>
-    </section>
-    <section name="Code">
-      <p>Wrap inline snippets of code with<code>&lt;code&gt;</code>.
-      </p>
-      <p>Wrap multi line pieces of code with <b>&lt;source&gt;</b>:
-        <source><![CDATA[
-  <repository>
-    <id>hippo-forge</id>
-    <name>Hippo Forge Maven 2 repository.</name>
-    <url>http://maven.onehippo.com/maven2-forge/</url>
-  </repository>]]></source>
-        Depending on <a href="settings.html">sourceLineNumbersEnabled setting</a>, have line numbers or not.
-      </p>
     </section>
   </body>
 </document>
