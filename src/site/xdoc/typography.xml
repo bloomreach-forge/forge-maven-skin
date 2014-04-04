@@ -34,13 +34,14 @@
     <section name="Code">
       <p>Wrap inline snippets of code with<code>&lt;code&gt;</code>.
       </p>
-      <p>Wrap multi line pieces of code with <b>&lt;source&gt;</b>:
+      <p>Wrap multi line pieces of code with <b>&lt;source&gt;</b>:</p>
         <source><![CDATA[
   <repository>
     <id>hippo-forge</id>
     <name>Hippo Forge Maven 2 repository.</name>
     <url>http://maven.onehippo.com/maven2-forge/</url>
   </repository>]]></source>
+      <p>
         Depending on <a href="usage.html">sourceLineNumbersEnabled setting</a>, have line numbers or not.
       </p>
     </section>
