@@ -171,3 +171,8 @@ ol.linenums {
     font-size: 12px;
     font-weight: bold;
 }
+
+/* counter attack h3 bottom margin if there is a p.smallinfo sibling (on behalf on the release notes) */
+.section h3+p.smallinfo {
+    margin-top: -14px;
+}

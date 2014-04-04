@@ -21,9 +21,7 @@
   <body>
     <section name="Release Notes">
       <subsection name="1.02.00">
-          <p class="smallinfo" >
-              Release Date: April 4, 2014
-          </p>
+        <p class="smallinfo">Release Date: April 4, 2014</p>
         <ul>
           <li>Changed Hippo Campus link text to Onehippo.org</li>
           <li>Smallinfo class style improvements</li>
