@@ -510,7 +510,7 @@
         #set( $sitesearchValue = $project.url.substring( $startIndex, $project.url.length() ) )
     #end
 
-    <input value="" name="sitesearch" type="hidden"/>
+    <input value="$sitesearchValue" name="sitesearch" type="hidden"/>
     <input class="search-query" name="q" id="query" type="text"/>
 </form>
 <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=search-form"></script>
