@@ -45,6 +45,26 @@
         Depending on <a href="usage.html">sourceLineNumbersEnabled setting</a>, have line numbers or not.
       </p>
     </section>
+    <section name="Alerts">
+      <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+      <div class="alert alert-info" role="alert">
+        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+      </div>
+      <div class="alert alert-warning" role="alert">
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+      </div>
+      <div class="alert alert-danger" role="alert">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      </div>
+      <source><![CDATA[
+<div class="alert alert-success">...</div>
+<div class="alert alert-info" role="alert">...</div>
+<div class="alert alert-warning" role="alert">...</div>
+<div class="alert alert-danger" role="alert">...</div>
+      ]]></source>
+    </section>
     <section name="Headings">
       <h1>h1. Heading 1</h1>
       <h2>h2. Heading 2</h2>
@@ -74,20 +94,6 @@
           <li>Ac tristique libero volutpat at</li>
         </ol>
       </ol>
-    </section>
-    <section name="Alerts">
-      <div class="alert alert-success" role="alert">
-        <strong>Well done!</strong> You successfully read this important alert message.
-      </div>
-      <div class="alert alert-info" role="alert">
-        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-      </div>
-      <div class="alert alert-warning" role="alert">
-        <strong>Warning!</strong> Better check yourself, you're not looking too good.
-      </div>
-      <div class="alert alert-danger" role="alert">
-        <strong>Oh snap!</strong> Change a few things up and try submitting again.
-      </div>
     </section>
   </body>
 </document>

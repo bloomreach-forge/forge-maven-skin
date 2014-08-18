@@ -19,18 +19,12 @@
   <skin>
     <groupId>org.onehippo.forge.mavenskin</groupId>
     <artifactId>forge-maven-skin</artifactId>
-    <version>1.02.00</version>
+    <version>1.02.01-SNAPSHOT</version>
   </skin>
-
-  <custom>
-    <hippoSkin>
-      <googleSearch/>
-    </hippoSkin>
-  </custom>
 
   <body>
     <menu name="Menu">
-      <item name="Home" href="index.html" />
+      <item name="About" href="index.html" />
       <item name="Usage" href="usage.html" />
       <item name="Typography" href="typography.html" />
       <item name="Release Notes" href="release-notes.html" />

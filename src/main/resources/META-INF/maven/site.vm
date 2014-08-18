@@ -225,8 +225,10 @@
         #if ( $collapseClass == "icon-chevron-down" )
             <ul class="nav nav-list">
                 #foreach( $subitem in $item.items )
-          #menuItem( $subitem )
-        #end
+                  #if ($item.name == "Project Information" && $subitem.name != "About")
+                    #menuItem( $subitem )
+                  #end
+                #end
             </ul>
         #end
     #end
@@ -236,7 +238,7 @@
 #macro ( mainMenu $menus )
 <ul class="nav nav-list">
     #foreach( $menu in $menus )
-        #if ( $menu.name )
+        #if ( $menu.name)
             #if ( $menu.img )
                 #if( $menu.position )
                     #set ( $position = $menu.position )
@@ -290,7 +292,7 @@
         #end
         #if ( $menu.items && $menu.items.size() > 0 )
             #foreach( $item in $menu.items )
-                #menuItem( $item )
+               #menuItem( $item )
             #end
         #end
     #end
@@ -789,13 +791,15 @@
                 <h1>
                     #if ($decoration.custom.getChild('hippoSkin').getChild('title') && $decoration.custom.getChild('hippoSkin').getChild('title').getValue() != '')
                         $decoration.custom.getChild('hippoSkin').getChild('title').getValue()
+                    #elseif( $decoration.name && $decoration.name != '')
+                        $decoration.name
                     #elseif( $project.name && $project.name != '' )
                         $project.name
                     #else
                         $project.artifactId
                     #end
-                </h1>
 
+                </h1>
                 <div class="clearfix"></div>
             </div>
         </div>

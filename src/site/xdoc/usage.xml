@@ -64,6 +64,27 @@
         <p>Since the Hippo Skin is based on Maven's Fluido Skin, there are also settings for Ohloh, GitHub, Twitter, Facebook and Google Plus.
           Please refer to the <a href="https://maven.apache.org/skins/maven-fluido-skin">Maven Fluido Skin page</a> for documentation.</p>
       </subsection>
+
+      <subsection name="Browser title and Header title">
+        <img src="images/BrowserHeaderTitle.png" alt="Titles"/>
+        <p>The browser title and header title can be customized. The browser title is constructed by prefixing the title set in the xml with the site title.
+        Each page should have a title which is used to construct the browser title.
+        </p>
+        <source><![CDATA[<document>
+  <properties>
+    <title>Page Title</title>
+  </properties>
+  ...
+</document>]]></source>
+        <p>
+          The site title is the same for all pages on the documentation site and is set in the site.xml. The name attribute of the project tag is used for the site title: <code><![CDATA[<project name="Title">]]></code>.
+          If this attribute is not set the name set in the pom is used. As a last resort if the name in the pom is not set, the artifact-id is used.
+        </p>
+        <p>
+          The header title works the in the same way as the browser title, only without the postfix after the site title. There is one higher level to set the header title as explained in 'Custom settings in site.xml'.
+          If this setting is missing, the same setting as the browser title is used.
+        </p>
+      </subsection>
     </section>
   </body>
 </document>
