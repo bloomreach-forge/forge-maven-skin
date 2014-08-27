@@ -19,10 +19,23 @@
   <skin>
     <groupId>org.onehippo.forge.mavenskin</groupId>
     <artifactId>forge-maven-skin</artifactId>
-    <version>1.02.01-SNAPSHOT</version>
+    <version>1.02.01</version>
   </skin>
 
+  <custom>
+    <hippoSkin>
+          <!-- Render a google search box (no box when absent) -->
+      <googleSearch>
+        <!-- Optional setting on where to do the search (it will search on the current site if the sitesearch tag is absent) -->
+        <sitesearch>http://forge_mavenskin.forge.onehippo.org/</sitesearch>
+      </googleSearch>
+
+    </hippoSkin>
+  </custom>
+
   <body>
+
+
     <menu name="Menu">
       <item name="About" href="index.html" />
       <item name="Usage" href="usage.html" />

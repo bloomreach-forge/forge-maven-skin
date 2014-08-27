@@ -62,8 +62,7 @@
 <div class="alert alert-success">...</div>
 <div class="alert alert-info" role="alert">...</div>
 <div class="alert alert-warning" role="alert">...</div>
-<div class="alert alert-danger" role="alert">...</div>
-      ]]></source>
+<div class="alert alert-danger" role="alert">...</div>]]></source>
     </section>
     <section name="Headings">
       <h1>h1. Heading 1</h1>

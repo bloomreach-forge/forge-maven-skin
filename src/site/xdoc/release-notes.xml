@@ -20,6 +20,13 @@
   </properties>
   <body>
     <section name="Release Notes">
+      <subsection name="1.02.01">
+        <p class="smallinfo">Release Date: Aug 27, 2014</p>
+        <ul>
+          <li>Line numbers fixed when using maven-site-plugin 3.3 <a href="https://issues.onehippo.com/browse/HIPPLUG-819">[HIPPLUG-819]</a></li>
+          <li>Removed double menu item selection for the index.html <a href="https://issues.onehippo.com/browse/HIPPLUG-904">[HIPPLUG-904]</a></li>
+        </ul>
+      </subsection>
       <subsection name="1.02.00">
         <p class="smallinfo">Release Date: April 4, 2014</p>
         <ul>
