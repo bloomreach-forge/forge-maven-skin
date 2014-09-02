@@ -33,7 +33,7 @@
         <subsection name="Documentation">
           <p>To see how to use the skin in your project's Maven site, see <a href="usage.html">the usage page</a>.</p>
           <p>To see how the skin looks on various HTML elements, see <a href="typography.html">the typography page</a>.</p>
-          <p>The are also some <a href="release-notes.html">release notes</a>.</p>
+          <p>For the latest version and changes, see the <a href="release-notes.html">release notes</a>.</p>
         </subsection>
       </section>
   </body>

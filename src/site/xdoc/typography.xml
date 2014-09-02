@@ -21,14 +21,16 @@
   <body>
     <section name="Section with name Typography">
       <subsection name="Subsection with name Paragraphs">
-        <p>Paragraph with regular font.<br/>
-          Use &lt;i&gt; for <i>italic text</i> or &lt;em&gt; for <em>emphasized text</em><br/>
+        <p>Paragraph with regular font.</p>
+        <p>
+          Use &lt;i&gt; for <i>italic text</i> or &lt;em&gt; for <em>emphasized text</em><br/>.
           Use &lt;b&gt; for <b>bold text</b> or &lt;strong&gt; for <strong>strong text</strong>.
         </p>
         <p>Use a regular &lt;a&gt; for a <a href="http://www.onehippo.org">http link</a> or a
           <a href="https://www.onehippo.org">https link</a> or a <a href="mailto:info@onehippo.org">mailto link</a>.</p>
-        <p class="note">This is a notice, created by adding class <code>note</code> to an element</p>
-        <p class="smallinfo">This extra information, created by adding class <code>smallinfo</code> to an element</p>
+        <p class="note">This is a notice, created by adding class <code>note</code> to an element.</p>
+        <p class="smallinfo">This extra information, created by adding class <code>smallinfo</code> to an element,
+        developed for the release dates below version headers in release notes.</p>
       </subsection>
     </section>
     <section name="Code">
@@ -42,36 +44,22 @@
     <url>http://maven.onehippo.com/maven2-forge/</url>
   </repository>]]></source>
       <p>
-        Depending on <a href="usage.html">sourceLineNumbersEnabled setting</a>, have line numbers or not.
+        Depending on <a href="usage.html">custom/hippoSkin/sourceLineNumbersEnabled</a> setting, have line numbers or not.
       </p>
     </section>
     <section name="Alerts">
-      <div class="alert alert-success" role="alert">
-        <strong>Well done!</strong> You successfully read this important alert message.
+      <div class="alert alert-success">
+        <strong>Well done!</strong> This is a &lt;div class="alert alert-success"&gt;.
       </div>
-      <div class="alert alert-info" role="alert">
-        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+      <div class="alert alert-info">
+        <strong>Heads up!</strong> This is a &lt;div class="alert alert-info"&gt;.
       </div>
-      <div class="alert alert-warning" role="alert">
-        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+      <div class="alert alert-warning">
+        <strong>Warning!</strong> This is a &lt;div class="alert alert-warning"&gt;.
       </div>
-      <div class="alert alert-danger" role="alert">
-        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      <div class="alert alert-danger">
+        <strong>Oh snap!</strong> This is a &lt;div class="alert alert-danger"&gt;.
       </div>
-      <source><![CDATA[
-<div class="alert alert-success">...</div>
-<div class="alert alert-info" role="alert">...</div>
-<div class="alert alert-warning" role="alert">...</div>
-<div class="alert alert-danger" role="alert">...</div>]]></source>
-    </section>
-    <section name="Headings">
-      <h1>h1. Heading 1</h1>
-      <h2>h2. Heading 2</h2>
-      <h3>h3. Heading 3</h3>
-      <h4>h4. Heading 4</h4>
-      <h5>h5. Heading 5</h5>
-      <h6>h6. Heading 6</h6>
-    </section>
     <section name="Unordered list">
       <ul>
         <li>Lorem ipsum dolor sit amet</li>
@@ -93,6 +81,14 @@
           <li>Ac tristique libero volutpat at</li>
         </ol>
       </ol>
+    </section>
+    <section name="Headings">
+      <h1>h1. Heading 1</h1>
+      <h2>h2. Heading 2</h2>
+      <h3>h3. Heading 3</h3>
+      <h4>h4. Heading 4</h4>
+      <h5>h5. Heading 5</h5>
+      <h6>h6. Heading 6</h6>
     </section>
   </body>
 </document>

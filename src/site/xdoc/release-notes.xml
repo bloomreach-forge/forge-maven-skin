@@ -23,8 +23,10 @@
       <subsection name="1.02.01">
         <p class="smallinfo">Release Date: Aug 27, 2014</p>
         <ul>
-          <li>Line numbers fixed when using maven-site-plugin 3.3 <a href="https://issues.onehippo.com/browse/HIPPLUG-819">[HIPPLUG-819]</a></li>
-          <li>Removed double menu item selection for the index.html <a href="https://issues.onehippo.com/browse/HIPPLUG-904">[HIPPLUG-904]</a></li>
+          <li><a href="https://issues.onehippo.com/browse/HIPPLUG-819">[HIPPLUG-819]</a><br/>
+            Line numbers fixed when using maven-site-plugin 3.3 </li>
+          <li> <a href="https://issues.onehippo.com/browse/HIPPLUG-904">[HIPPLUG-904]</a><br/>
+            Various changes: some styling, fix Google search, removed double menu item selection for the index.html</li>
         </ul>
       </subsection>
       <subsection name="1.02.00">
