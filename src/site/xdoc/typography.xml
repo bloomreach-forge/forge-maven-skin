@@ -60,6 +60,7 @@
       <div class="alert alert-danger">
         <strong>Oh snap!</strong> This is a &lt;div class="alert alert-danger"&gt;.
       </div>
+    </section>
     <section name="Unordered list">
       <ul>
         <li>Lorem ipsum dolor sit amet</li>
