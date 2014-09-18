@@ -194,7 +194,7 @@
         #end
     #end
 
-    #if ( $alignedFileName == $currentItemHref )
+    #if ( $alignedFileName == $currentItemHref && $item.name != "About")
     <li class="active">
     #else
     <li>
@@ -225,9 +225,7 @@
         #if ( $collapseClass == "icon-chevron-down" )
             <ul class="nav nav-list">
                 #foreach( $subitem in $item.items )
-                  #if ($item.name == "Project Information" && $subitem.name != "About")
                     #menuItem( $subitem )
-                  #end
                 #end
             </ul>
         #end
