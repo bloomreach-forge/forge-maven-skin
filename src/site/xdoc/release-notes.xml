@@ -20,28 +20,36 @@
   </properties>
   <body>
     <section name="Release Notes">
+      <subsection name="1.02.02">
+        <p class="smallinfo">Release Date: Sep 29, 2014</p>
+        <ul>
+          <li><a href="https://issues.onehippo.com/browse/HIPPLUG-929">HIPPLUG-929</a><br/>
+            Render sub menu items again (broken in 1.02.01 only).
+          </li>
+        </ul>
+      </subsection>
       <subsection name="1.02.01">
         <p class="smallinfo">Release Date: Aug 27, 2014</p>
         <ul>
-          <li><a href="https://issues.onehippo.com/browse/HIPPLUG-819">[HIPPLUG-819]</a><br/>
-            Line numbers fixed when using maven-site-plugin 3.3 </li>
-          <li> <a href="https://issues.onehippo.com/browse/HIPPLUG-904">[HIPPLUG-904]</a><br/>
-            Various changes: some styling, fix Google search, removed double menu item selection for the index.html</li>
+          <li><a href="https://issues.onehippo.com/browse/HIPPLUG-819">HIPPLUG-819</a><br/>
+            Line numbers fixed when using maven-site-plugin 3.3.</li>
+          <li> <a href="https://issues.onehippo.com/browse/HIPPLUG-904">HIPPLUG-904</a><br/>
+            Various changes: some styling, fix Google search, removed double menu item selection for the index.html.</li>
         </ul>
       </subsection>
       <subsection name="1.02.00">
         <p class="smallinfo">Release Date: April 4, 2014</p>
         <ul>
-          <li>Changed Hippo Campus link text to Onehippo.org</li>
-          <li>Smallinfo class style improvements</li>
-          <li>By default, not applying a date format, will show the date as "dd Month YYYY"</li>
-          <li>By default set sourceLineNumbersEnabled style to true, if it is not set already</li>
+          <li>Changed Hippo Campus link text to Onehippo.org.</li>
+          <li>Smallinfo class style improvements.</li>
+          <li>By default, not applying a date format, will show the date as "dd Month YYYY".</li>
+          <li>By default set sourceLineNumbersEnabled style to true, if it is not set already.</li>
         </ul>
       </subsection>
       <subsection name="1.01.01">
         <ul>
-          <li>Fixed logo path (was wrong with nested paths)</li>
-          <li>Replace icons for external links</li>
+          <li>Fixed logo path (was wrong with nested paths).</li>
+          <li>Replace icons for external links.</li>
         </ul>
       </subsection>
       <subsection name="1.01.00">
