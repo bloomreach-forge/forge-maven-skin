@@ -18,5 +18,33 @@
  */
 
 $(document).ready(function(){
-    prettyPrint();
+
+  var highlightSourceElements = function() {
+    var brushRe = /^brush:/;
+
+    $('div.source > pre').each(function(i, elem) {
+      var styleClass = $(elem).attr("class");
+
+      if (!styleClass || !brushRe.test(styleClass)) {
+        // check if there's a user-added parent wrapper element containing brush class
+        styleClass = $(elem).parent().attr("class");
+
+        if (!styleClass || !brushRe.test(styleClass)) {
+          // check one more if there's a user-added grand-parent wrapper element containing brush class
+          styleClass = $(elem).parent().parent().attr("class");
+        }
+      }
+
+      if (!styleClass || !brushRe.test(styleClass)) {
+        styleClass = "brush:plain";
+      }
+
+      $(elem).addClass(styleClass);
+    });
+
+    SyntaxHighlighter.all()
+  };
+
+  highlightSourceElements();
+
 });

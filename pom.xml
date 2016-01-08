@@ -97,7 +97,9 @@
         <directory>${project.build.directory}/${project.build.finalName}</directory>
         <includes>
           <include>css/forge-maven-skin-${project.version}.min.css</include>
+          <include>css/forge-maven-skin-syntaxhighlighter-${project.version}.min.css</include>
           <include>js/forge-maven-skin-${project.version}.min.js</include>
+          <include>js/forge-maven-skin-syntaxhighlighter-${project.version}.min.js</include>
         </includes>
       </resource>
     </resources>
@@ -128,7 +130,6 @@
                 <cssSourceFile>bootstrap-2.2.1.css</cssSourceFile>
                 <cssSourceFile>maven-base.css</cssSourceFile>
                 <cssSourceFile>maven-theme.css</cssSourceFile>
-                <cssSourceFile>prettify.css</cssSourceFile>
                 <cssSourceFile>hippostyle.css</cssSourceFile>
               </cssSourceFiles>
               <cssFinalFile>forge-maven-skin-${project.version}.css</cssFinalFile>
@@ -136,10 +137,56 @@
               <jsSourceFiles>
                 <jsSourceFile>jquery-1.8.0.js</jsSourceFile>
                 <jsSourceFile>bootstrap-2.2.1.js</jsSourceFile>
-                <jsSourceFile>prettify.js</jsSourceFile>
                 <jsSourceFile>main.js</jsSourceFile>
               </jsSourceFiles>
               <jsFinalFile>forge-maven-skin-${project.version}.js</jsFinalFile>
+            </configuration>
+            <goals>
+              <goal>minify</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>syntaxhighlighter-minify</id>
+            <phase>generate-resources</phase>
+            <configuration>
+              <webappSourceDir>${basedir}/src/main/resources</webappSourceDir>
+              <cssSourceDir>css/syntaxhighlighter-3.0.83</cssSourceDir>
+              <cssSourceFiles>
+                <cssSourceFile>shCore.css</cssSourceFile>
+                <cssSourceFile>shThemeDefault.css</cssSourceFile>
+              </cssSourceFiles>
+              <cssFinalFile>forge-maven-skin-syntaxhighlighter-${project.version}.css</cssFinalFile>
+              <jsSourceDir>js/syntaxhighlighter-3.0.83</jsSourceDir>
+              <jsSourceFiles>
+                <jsSourceFile>shCore.js</jsSourceFile>
+                <jsSourceFile>shAutoloader.js</jsSourceFile>
+                <jsSourceFile>shBrushAS3.js</jsSourceFile>
+                <jsSourceFile>shBrushAppleScript.js</jsSourceFile>
+                <jsSourceFile>shBrushBash.js</jsSourceFile>
+                <jsSourceFile>shBrushCSharp.js</jsSourceFile>
+                <jsSourceFile>shBrushColdFusion.js</jsSourceFile>
+                <jsSourceFile>shBrushCpp.js</jsSourceFile>
+                <jsSourceFile>shBrushCss.js</jsSourceFile>
+                <jsSourceFile>shBrushDelphi.js</jsSourceFile>
+                <jsSourceFile>shBrushDiff.js</jsSourceFile>
+                <jsSourceFile>shBrushErlang.js</jsSourceFile>
+                <jsSourceFile>shBrushGroovy.js</jsSourceFile>
+                <jsSourceFile>shBrushJScript.js</jsSourceFile>
+                <jsSourceFile>shBrushJava.js</jsSourceFile>
+                <jsSourceFile>shBrushJavaFX.js</jsSourceFile>
+                <jsSourceFile>shBrushPerl.js</jsSourceFile>
+                <jsSourceFile>shBrushPhp.js</jsSourceFile>
+                <jsSourceFile>shBrushPlain.js</jsSourceFile>
+                <jsSourceFile>shBrushPowerShell.js</jsSourceFile>
+                <jsSourceFile>shBrushPython.js</jsSourceFile>
+                <jsSourceFile>shBrushRuby.js</jsSourceFile>
+                <jsSourceFile>shBrushSass.js</jsSourceFile>
+                <jsSourceFile>shBrushScala.js</jsSourceFile>
+                <jsSourceFile>shBrushSql.js</jsSourceFile>
+                <jsSourceFile>shBrushVb.js</jsSourceFile>
+                <jsSourceFile>shBrushXml.js</jsSourceFile>
+              </jsSourceFiles>
+              <jsFinalFile>forge-maven-skin-syntaxhighlighter-${project.version}.js</jsFinalFile>
             </configuration>
             <goals>
               <goal>minify</goal>

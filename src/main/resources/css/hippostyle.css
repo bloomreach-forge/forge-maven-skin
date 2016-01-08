@@ -187,3 +187,14 @@ ol.linenums {
 .section h3+p.smallinfo {
     margin-top: -14px;
 }
+
+div.source {
+    border: 1px solid #e3e3e3;
+}
+
+/* syntaxhighlighter: to remove line break by the source container div inside a td.*/
+.container::before, .container::after {
+    content: "";
+    display: inherit;
+    line-height: 0;
+}

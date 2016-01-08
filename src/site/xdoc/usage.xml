@@ -22,26 +22,31 @@
     <section name="How to use the Hippo Forge Maven Skin">
       <subsection name="Maven 2 repository">
         <p>The following repository should be available for your build:</p>
-        <source><![CDATA[
+        <div class="brush: xml">
+          <source><![CDATA[
 <repository>
   <id>hippo-forge</id>
   <name>Hippo Forge maven 2 repository.</name>
   <url>http://maven.onehippo.com/maven2-forge/</url>
 </repository>]]></source>
+        </div>
       </subsection>
       <subsection name="Reference in site.xml">
             <p>To apply the skin to your project's site, add this reference in the Maven site descriptor, normally at <code>src/site/site.xml</code>:</p>
-            <source><![CDATA[
+            <div class="brush: xml">
+              <source><![CDATA[
 <skin>
   <groupId>org.onehippo.forge.mavenskin</groupId>
   <artifactId>forge-maven-skin</artifactId>
   <version>1.02.02</version>
 </skin>]]></source>
+            </div>
       </subsection>
       <subsection name="Custom settings in site.xml">
         <p>You can influence the rendering of the skin by following settings below the &lt;skin&gt; element.
           Note that these settings are optional and have defaults when not set.</p>
-        <source><![CDATA[
+        <div class="brush: xml">
+          <source><![CDATA[
 <!-- customizable publish date format, defaulting to "d MMMM yyyy" -->
 <publishDate format="yyyy-MM-dd" />
 
@@ -49,9 +54,6 @@
   <hippoSkin>
       <!-- Header title setting, defaulting to the project name from the pom -->
       <title>Hippo Forge Maven Skin Title Override</title>
-
-      <!-- Set line numbers in source blocks, defaulting to true -->
-      <sourceLineNumbersEnabled>false</sourceLineNumbersEnabled>
 
       <!-- Render a google search box (no box when absent) -->
       <googleSearch>
@@ -61,6 +63,7 @@
 
   </hippoSkin>
 </custom>]]></source>
+        </div>
         <p>Since the Hippo Skin is based on Maven's Fluido Skin, there are also settings for Ohloh, GitHub, Twitter, Facebook and Google Plus.
           Please refer to the <a href="https://maven.apache.org/skins/maven-fluido-skin">Maven Fluido Skin page</a> for documentation.</p>
       </subsection>
@@ -70,12 +73,14 @@
         <p>The browser title and header title can be customized. The browser title is constructed by prefixing the title set in the xml with the site title.
         Each page should have a title which is used to construct the browser title.
         </p>
-        <source><![CDATA[<document>
+        <div class="brush: xml">
+          <source><![CDATA[<document>
   <properties>
     <title>Page Title</title>
   </properties>
   ...
 </document>]]></source>
+        </div>
         <p>
           The site title is the same for all pages on the documentation site and is set in the site.xml. The name attribute of the project tag is used for the site title: <code><![CDATA[<project name="Title">]]></code>.
           If this attribute is not set the name set in the pom is used. As a last resort if the name in the pom is not set, the artifact-id is used.
