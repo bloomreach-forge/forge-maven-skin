@@ -23,8 +23,9 @@
       <subsection name="Subsection with name Paragraphs">
         <p>Paragraph with regular font.</p>
         <p>
-          Use &lt;i&gt; for <i>italic text</i> or &lt;em&gt; for <em>emphasized text</em><br/>.
-          Use &lt;b&gt; for <b>bold text</b> or &lt;strong&gt; for <strong>strong text</strong>.
+          Use &lt;i&gt; for <i>italic text</i> or &lt;em&gt; for <em>emphasized text</em>.<br/>
+          Use &lt;b&gt; for <b>bold text</b> or &lt;strong&gt; for <strong>strong text</strong>.<br/>
+          Use &lt;tt&gt; or &lt;code&gt; for <tt>monospaced text</tt>.
         </p>
         <p>Use a regular &lt;a&gt; for a <a href="http://www.onehippo.org">http link</a> or a
           <a href="https://www.onehippo.org">https link</a> or a <a href="mailto:info@onehippo.org">mailto link</a>.</p>
@@ -34,7 +35,7 @@
       </subsection>
     </section>
     <section name="Code">
-      <p>Wrap inline snippets of code with<code>&lt;code&gt;</code>.
+      <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.
       </p>
       <p>Wrap multi line pieces of code with <b>&lt;source&gt;</b>:</p>
       <source><![CDATA[
