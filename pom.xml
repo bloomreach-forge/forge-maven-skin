@@ -18,11 +18,17 @@
   <modelVersion>4.0.0</modelVersion>
 
   <name>Hippo Forge Maven Skin</name>
+
   <groupId>org.onehippo.forge.mavenskin</groupId>
   <artifactId>forge-maven-skin</artifactId>
   <version>1.03.01-SNAPSHOT</version>
 
   <inceptionYear>2012</inceptionYear>
+  <url>http://forge_mavenskin.forge.onehippo.org/</url>
+
+  <properties>
+    <maven-fluido-skin.version>1.5</maven-fluido-skin.version>
+  </properties>
 
   <developers>
     <developer>
@@ -34,6 +40,11 @@
       <name>Joeri de Gooijer</name>
       <id>jdegooijer</id>
       <email>j.degooijer@onehippo.com</email>
+    </developer>
+    <developer>
+      <name>Michiel Rop</name>
+      <id>mrop</id>
+      <email>m.rop@onehippo.com</email>
     </developer>
   </developers>
 
@@ -72,9 +83,18 @@
     </repository>
   </repositories>
 
+  <dependencies>
+    <dependency>
+      <artifactId>maven-fluido-skin</artifactId>
+      <groupId>org.apache.maven.skins</groupId>
+      <version>${maven-fluido-skin.version}</version>
+    </dependency>
+  </dependencies>
+
+
   <build>
     <resources>
-      <!-- exclude css and js since will include the minified version -->
+      <!-- Add skin info by filtering on all except css and js... -->
       <resource>
         <directory>${basedir}/src/main/resources</directory>
         <excludes>
@@ -83,129 +103,63 @@
         </excludes>
         <filtering>true</filtering> <!-- add skin-info -->
       </resource>
-
-      <!-- include the print.css -->
+      <!-- ... while making sure css and js is included -->
+      <!-- ... while making sure css and js is included -->
       <resource>
         <directory>${basedir}/src/main/resources</directory>
         <includes>
-          <include>css/print.css</include>
+          <include>css/**</include>
+          <include>js/**</include>
         </includes>
-      </resource>
-
-      <!-- include minified only -->
-      <resource>
-        <directory>${project.build.directory}/${project.build.finalName}</directory>
-        <includes>
-          <include>css/forge-maven-skin-${project.version}.min.css</include>
-          <include>css/forge-maven-skin-syntaxhighlighter-${project.version}.min.css</include>
-          <include>js/forge-maven-skin-${project.version}.min.js</include>
-          <include>js/forge-maven-skin-syntaxhighlighter-${project.version}.min.js</include>
-        </includes>
+        <filtering>false</filtering>
       </resource>
     </resources>
-
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-resources-plugin</artifactId>
-        <configuration>
-          <delimiters>
-            <delimiter>@</delimiter>
-          </delimiters>
-          <useDefaultDelimiters>false</useDefaultDelimiters>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>com.samaxes.maven</groupId>
-        <artifactId>maven-minify-plugin</artifactId>
-        <version>1.3.5</version>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.4.3</version>
         <executions>
           <execution>
-            <id>default-minify</id>
-            <phase>generate-resources</phase>
-            <configuration>
-              <webappSourceDir>${basedir}/src/main/resources</webappSourceDir>
-              <cssSourceDir>css</cssSourceDir>
-              <cssSourceFiles>
-                <cssSourceFile>bootstrap-2.2.1.css</cssSourceFile>
-                <cssSourceFile>maven-base.css</cssSourceFile>
-                <cssSourceFile>maven-theme.css</cssSourceFile>
-                <cssSourceFile>hippostyle.css</cssSourceFile>
-              </cssSourceFiles>
-              <cssFinalFile>forge-maven-skin-${project.version}.css</cssFinalFile>
-              <jsSourceDir>js</jsSourceDir>
-              <jsSourceFiles>
-                <jsSourceFile>jquery-1.8.0.js</jsSourceFile>
-                <jsSourceFile>bootstrap-2.2.1.js</jsSourceFile>
-                <jsSourceFile>main.js</jsSourceFile>
-              </jsSourceFiles>
-              <jsFinalFile>forge-maven-skin-${project.version}.js</jsFinalFile>
-            </configuration>
+            <phase>package</phase>
             <goals>
-              <goal>minify</goal>
+              <goal>shade</goal>
             </goals>
-          </execution>
-          <execution>
-            <id>syntaxhighlighter-minify</id>
-            <phase>generate-resources</phase>
             <configuration>
-              <webappSourceDir>${basedir}/src/main/resources</webappSourceDir>
-              <cssSourceDir>css/syntaxhighlighter-3.0.83</cssSourceDir>
-              <cssSourceFiles>
-                <cssSourceFile>shCore.css</cssSourceFile>
-                <cssSourceFile>shThemeDefault.css</cssSourceFile>
-              </cssSourceFiles>
-              <cssFinalFile>forge-maven-skin-syntaxhighlighter-${project.version}.css</cssFinalFile>
-              <jsSourceDir>js/syntaxhighlighter-3.0.83</jsSourceDir>
-              <jsSourceFiles>
-                <jsSourceFile>shCore.js</jsSourceFile>
-                <jsSourceFile>shAutoloader.js</jsSourceFile>
-                <jsSourceFile>shBrushAS3.js</jsSourceFile>
-                <jsSourceFile>shBrushAppleScript.js</jsSourceFile>
-                <jsSourceFile>shBrushBash.js</jsSourceFile>
-                <jsSourceFile>shBrushCSharp.js</jsSourceFile>
-                <jsSourceFile>shBrushColdFusion.js</jsSourceFile>
-                <jsSourceFile>shBrushCpp.js</jsSourceFile>
-                <jsSourceFile>shBrushCss.js</jsSourceFile>
-                <jsSourceFile>shBrushDelphi.js</jsSourceFile>
-                <jsSourceFile>shBrushDiff.js</jsSourceFile>
-                <jsSourceFile>shBrushErlang.js</jsSourceFile>
-                <jsSourceFile>shBrushGroovy.js</jsSourceFile>
-                <jsSourceFile>shBrushJScript.js</jsSourceFile>
-                <jsSourceFile>shBrushJava.js</jsSourceFile>
-                <jsSourceFile>shBrushJavaFX.js</jsSourceFile>
-                <jsSourceFile>shBrushPerl.js</jsSourceFile>
-                <jsSourceFile>shBrushPhp.js</jsSourceFile>
-                <jsSourceFile>shBrushPlain.js</jsSourceFile>
-                <jsSourceFile>shBrushPowerShell.js</jsSourceFile>
-                <jsSourceFile>shBrushPython.js</jsSourceFile>
-                <jsSourceFile>shBrushRuby.js</jsSourceFile>
-                <jsSourceFile>shBrushSass.js</jsSourceFile>
-                <jsSourceFile>shBrushScala.js</jsSourceFile>
-                <jsSourceFile>shBrushSql.js</jsSourceFile>
-                <jsSourceFile>shBrushVb.js</jsSourceFile>
-                <jsSourceFile>shBrushXml.js</jsSourceFile>
-              </jsSourceFiles>
-              <jsFinalFile>forge-maven-skin-syntaxhighlighter-${project.version}.js</jsFinalFile>
+              <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.IncludeResourceTransformer">
+                  <resource>META-INF/maven/site.vm</resource>
+                  <file>META-INF/maven/site.vm</file>
+                </transformer>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.IncludeResourceTransformer">
+                  <resource>images/hippo-logo.png</resource>
+                  <file>images/hippo-logo.png</file>
+                </transformer>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.IncludeResourceTransformer">
+                  <resource>css/hippostyle.css</resource>
+                  <file>css/hippostyle.css</file>
+                </transformer>
+              </transformers>
             </configuration>
-            <goals>
-              <goal>minify</goal>
-            </goals>
           </execution>
         </executions>
       </plugin>
+    </plugins>
+  </build>
+
+  <!-- Added reports-plugin configuration to prevent warning at building -->
+  <reporting>
+    <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>3.3</version>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
+          <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+        </configuration>
       </plugin>
     </plugins>
-    <extensions>
-      <extension>
-        <groupId>org.jvnet.wagon-svn</groupId>
-        <artifactId>wagon-svn</artifactId>
-        <version>1.9</version>
-      </extension>
-    </extensions>
-  </build>
+  </reporting>
+
 </project>
