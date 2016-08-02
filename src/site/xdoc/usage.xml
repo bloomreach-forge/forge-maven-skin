@@ -38,7 +38,7 @@
 <skin>
   <groupId>org.onehippo.forge.mavenskin</groupId>
   <artifactId>forge-maven-skin</artifactId>
-  <version>1.03.00</version>
+  <version>1.02.02</version>
 </skin>]]></source>
             </div>
       </subsection>

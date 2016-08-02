@@ -20,20 +20,6 @@
   </properties>
   <body>
     <section name="Release Notes">
-      <subsection name="1.03.00">
-        <p class="smallinfo">Release Date: Jan 14, 2016</p>
-        <ul>
-          <li><a href="https://issues.onehippo.com/browse/HIPPLUG-1242">HIPPLUG-1242</a><br/>
-            Forge Maven Skin: line numbers failing when generated on non-Windows env
-          </li>
-          <li><a href="https://issues.onehippo.com/browse/HIPPLUG-1243">HIPPLUG-1243</a><br/>
-            Forge Maven Skin: Integrate with SyntaxHighlighter for source code generation
-          </li>
-          <li><a href="https://issues.onehippo.com/browse/HIPPLUG-1244">HIPPLUG-1244</a><br/>
-            Forge Maven Skin: Make (sub)section headers font bigger or more recognizable
-          </li>
-        </ul>
-      </subsection>
       <subsection name="1.02.02">
         <p class="smallinfo">Release Date: Sep 29, 2014</p>
         <ul>

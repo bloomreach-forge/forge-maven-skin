@@ -35,6 +35,8 @@
       </subsection>
     </section>
     <section name="Code">
+      <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.
+      </p>
       <p>Wrap multi line pieces of code with <b>&lt;source&gt;</b>:</p>
       <source><![CDATA[
   <repository>
@@ -43,8 +45,25 @@
     <url>http://maven.onehippo.com/maven2-forge/</url>
   </repository>]]></source>
       <p>
-        Source code sections are enhanced by <a href="http://code.google.com/p/google-code-prettify/">Google Code Prettify</a>.
-        Prettify makes a best effort to guess the language. Line number are enabled by default.
+        <b>&lt;source&gt;</b> element will be displayed in 'plain' mode by default
+        , using <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a> automatically.
+      </p>
+      <p>
+        If you want to render the source in better syntax highlighting, then you can wrap the <b>&lt;source&gt;</b>
+        by a <b>&lt;div&gt;</b> with <b>brush</b> option like <b>&lt;div class="brush: xml"&gt;...&lt;/div&gt;</b>.
+        Then it will show better syntax highlighting based your brush hint like the following example.
+      </p>
+      <div class="brush: xml">
+        <source><![CDATA[
+  <repository>
+    <id>hippo-forge</id>
+    <name>Hippo Forge Maven 2 repository.</name>
+    <url>http://maven.onehippo.com/maven2-forge/</url>
+  </repository>]]></source>
+      </div>
+      <p>
+        You can use 'plain', 'xml', 'java', 'javascript', 'groovy', 'html', 'shell' and more!
+        Please find more on how to use different brushes and options at <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a>.
       </p>
     </section>
     <section name="Alerts">
