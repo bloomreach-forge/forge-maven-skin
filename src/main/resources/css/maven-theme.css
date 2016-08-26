@@ -20,10 +20,14 @@
 /* $Id: maven-theme.css 1377307 2012-08-25 15:11:41Z rfscholte $ */
 
 /*IE6/7 don't support selectors*/
-a.externalLink{background: url('../images/external.png') right center no-repeat;padding-right: 18px;}
+a.externalLink {
+  padding-right: 18px;
+}
 a.newWindow{background: url('../images/window-new.png') right center no-repeat;padding-right: 18px;}
 
-a.externalLink[href^=http]{background: url('../images/external_link_icon.gif') right center no-repeat;padding-right: 18px;}
+a.externalLink[href^=http] {
+  background: url('../images/internet-web-browser.png') right center no-repeat;padding-right: 18px;
+}
 a.externalLink[href$=".asc"]{background: url('../images/accessories-text-editor.png') right center no-repeat;padding-right: 18px;}
 a.externalLink[href$=".jpg"],
 a.externalLink[href$=".jpeg"],
@@ -33,14 +37,21 @@ a.externalLink[href$=".tar.gz"],
 a.externalLink[href$=".zip"]{background: url('../images/package-x-generic.png') right center no-repeat;padding-right: 18px;}
 a.externalLink[href$=".md5"],
 a.externalLink[href$=".sha1"]{background: url('../images/document-properties.png') right center no-repeat;padding-right: 18px;}
-a.externalLink[href^=https]{background: url('../images/external_link_icon.gif') right center no-repeat;padding-right: 18px;}
+a.externalLink[href^=https] {
+  background: url('../images/application-certificate.png') right center no-repeat;padding-right: 18px;
+}
 a.externalLink[href^=file]{background: url('../images/drive-harddisk.png') right center no-repeat;padding-right: 18px;}
 a.externalLink[href^=ftp]{background: url('../images/network-server.png') right center no-repeat;padding-right: 18px;}
 a.externalLink[href^=mailto]{background: url('../images/contact-new.png') right center no-repeat;padding-right: 18px;}
 
 li.none{list-style: none;}
 
-.search-query{background-image: url(http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-position: 0% 50%; background-repeat: no-repeat no-repeat; width: auto}
+.search-query {
+  background-image: url(https://cse.google.com/cse/images/google_custom_search_watermark.gif);
+  background-attachment: initial; background-origin: initial; background-clip: initial;
+  background-color: rgb(255, 255, 255); background-position: 0% 50%; background-repeat: no-repeat no-repeat;
+  width:95%
+}
 
 body.topBarEnabled{padding-top: 60px;}
 body.topBarDisabled{padding-top: 20px;}
@@ -57,7 +68,11 @@ img.builtBy{margin: 10px auto;}
 .hero-unit h2{font-size: 60px;}
 
 /* Copied from bootstrap <code> tag style. Maven translates <code> to <tt>. */
-tt{padding:0 3px 2px;font-family:Monaco, Andale Mono, Courier New, monospace;font-size:12px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-color:#fee9cc;color:rgba(0, 0, 0, 0.75);padding:1px 3px;}
+tt {
+  padding:0 3px 2px;font-family:Monaco, Andale Mono, Courier New, monospace;
+  font-size:0.9em;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
+  background-color:#fee9cc;color:rgba(0, 0, 0, 0.75);padding:1px 3px;
+}
 
 /* avoid greyed list items */
 li{color:#404040;}
@@ -80,4 +95,10 @@ table.zebra-striped{background-color:#FFF}
   margin-right: -6px;
   float: right;
   opacity: 0.25;
+}
+
+/* MSKINS-79: pull-right compresses list items */
+li.pull-right {
+  margin-left: 3px;
+  margin-right: 3px;
 }
