@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  Copyright 2012-2014 Hippo
+  Copyright 2012-2016 Hippo
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -20,6 +20,17 @@
   </properties>
   <body>
     <section name="Release Notes">
+      <subsection name="1.04.00">
+        <p class="smallinfo">Release Date: Sept 06, 2016</p>
+        <ul>
+          <li><a href="https://issues.onehippo.com/browse/HIPPLUG-1247">HIPPLUG-1247</a><br/>
+            Forge Maven Skin: Typography may look more close to Fluido.
+          </li>
+          <li><a href="https://issues.onehippo.com/browse/HIPPLUG-1354">HIPPLUG-1354</a><br/>
+            Forge Maven Skin: Change scheme of links to https
+          </li>
+        </ul>
+      </subsection>
       <subsection name="1.03.00">
         <p class="smallinfo">Release Date: Jan 14, 2016</p>
         <ul>
