@@ -44,6 +44,15 @@
     <tag>HEAD</tag>
   </scm>
 
+  <distributionManagement>
+    <repository>
+      <name>Hippo Maven 2 Forge Repository</name>
+      <id>hippo-maven2-forge</id>
+      <url>https://maven.onehippo.com/content/repositories/forge-releases/</url>
+      <uniqueVersion>false</uniqueVersion>
+    </repository>
+  </distributionManagement>
+
   <issueManagement>
     <system>Hippo Jira Plugins</system>
     <url>https://issues.onehippo.com/browse/HIPPLUG</url>
