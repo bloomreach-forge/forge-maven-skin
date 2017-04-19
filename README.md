@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/onehippo-forge/forge-maven-skin.svg?branch=develop)](https://travis-ci.org/onehippo-forge/forge-maven-skin)
 
 # Hippo Forge Maven Skin
 
