@@ -314,6 +314,7 @@
   #*    *##if ( $decoration.body.footer )
   #*      *#$render.eval( $decoration.body.footer )
   #*    *##else
+          #set ( $copyrightClass = ' class="copyright"')
   #*      *##if ( $decoration.custom.getChild( 'hippoSkin' ) && $decoration.custom.getChild( 'hippoSkin' ).getChild('copyrightClass') )
       #*        *##set ( $copyrightClass = ' class="copyright ' + $decoration.custom.getChild( 'hippoSkin' ).getChild('copyrightClass').getValue() + '"' )
       #*      *##end

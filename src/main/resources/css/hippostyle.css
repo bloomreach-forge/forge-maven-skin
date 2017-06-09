@@ -6,11 +6,17 @@ body {
     color: #4f5e67;
 }
 
+body.topBarDisabled {
+    padding-top: 10px;
+}
+
 h1 {
     font-family: Georgia,serif;
     font-size: 2.2rem;
     font-weight: 400;
     line-height: 38px;
+    margin-left: 15px;
+    margin-top: 10px;
 }
 
 h2 {
@@ -49,7 +55,7 @@ tt {
 }
 
 .section h1 {
-    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .section h2 {
@@ -167,11 +173,12 @@ ol.linenums {
 
 #breadcrumbs .links {
     float: right;
+    margin-right: 25px;
 }
 
 #breadcrumbs .links a {
     color: #ffffff;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 #breadcrumbs .links a:hover {

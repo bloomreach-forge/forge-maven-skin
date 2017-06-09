@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright 2012-2016 Hippo
+  Copyright 2012-2017 Hippo
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
   <skin>
     <groupId>org.onehippo.forge.mavenskin</groupId>
     <artifactId>forge-maven-skin</artifactId>
-    <version>1.04.00</version>
+    <version>1.5.0-SNAPSHOT</version>
   </skin>
 
   <custom>
@@ -30,7 +30,9 @@
         <!-- Optional setting on where to do the search (it will search on the current site if the sitesearch tag is absent) -->
         <sitesearch>http://forge_mavenskin.forge.onehippo.org/</sitesearch>
       </googleSearch>
-
+      <gitHub>
+        <projectId>onehippo-forge/forge-maven-skin</projectId>
+      </gitHub>
     </hippoSkin>
   </custom>
 
