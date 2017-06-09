@@ -6,22 +6,19 @@ body {
     color: #4f5e67;
 }
 
-
 h1 {
     font-family: Georgia,serif;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 400;
     line-height: 38px;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 h2 {
     font-family: interstate-light,Arial,sans-serif;
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 20px;
 }
 
@@ -47,13 +44,15 @@ a {
     font-size: 14px;
 }
 
+tt {
+    background-color: transparent;
+}
+
 .section h1 {
-    margin-bottom: 20px;
     margin-top: 5px;
 }
 
 .section h2 {
-    margin-bottom: 20px;
     margin-top: 5px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 2px;
@@ -61,13 +60,12 @@ a {
 
 .section h3 {
     border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
     margin-top: 5px;
     padding: 10px 0px 2px;
 }
 
 .section p {
-    margin: 0 0 14px;
+    margin: 0px 0px 14px;
 }
 
 .section ul, .section ol {
@@ -122,7 +120,7 @@ pre * {
 }
 
 
-#header #logo {
+#banner #logo {
     float: left;
 }
 
@@ -164,7 +162,7 @@ ol.linenums {
     float: left;
     background: transparent;
     margin-bottom: 0;
-    padding: 0 15px;
+    padding: 0px 15px;
 }
 
 #breadcrumbs .links {
@@ -195,6 +193,11 @@ ol.linenums {
     margin-top: -14px;
 }
 
+p.copyright {
+    font-style: italic;
+    font-size: 12px;
+}
+
 div.source {
     border: 1px solid #e3e3e3;
 }
@@ -204,4 +207,8 @@ div.source {
     content: "";
     display: inherit;
     line-height: 0;
+}
+
+a.externalLink[href^=http], a.externalLink[href^=https] {
+    background: url('../images/hipposkin/external_link_icon.gif') right center no-repeat;padding-right: 18px;
 }
