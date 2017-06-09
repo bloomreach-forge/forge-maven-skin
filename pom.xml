@@ -206,7 +206,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
         <configuration>
-          <outputDirectory>docs2</outputDirectory>
+          <outputDirectory>docs</outputDirectory>
           <inputEncoding>UTF-8</inputEncoding>
         </configuration>
         <version>3.6</version>
