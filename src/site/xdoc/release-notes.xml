@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  Copyright 2012-2016 Hippo
+  Copyright 2012-2017 Hippo
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -20,6 +20,15 @@
   </properties>
   <body>
     <section name="Release Notes">
+      <subsection name="2.0.0 (unreleased)">
+        <p class="smallinfo">Release Date: TBD</p>
+        <ul>
+          <li>Base the skin on Maven Fluido Skin version 1.6, used to be 1.4. Much better on mobile!</li>
+          <li>Modify the "Fork me on GitHub" ribbon support, defaulting to right top green ribbon, configurable in site.xml
+              by element <tt>&lt;custom&gt;&lt;hippoSkin&gt;&lt;gitHub&gt;&lt;projectId&gt;</tt>.</li>
+          <li>Various styling improvements.</li>
+        </ul>
+      </subsection>
       <subsection name="1.04.00">
         <p class="smallinfo">Release Date: Sept 06, 2016</p>
         <ul>

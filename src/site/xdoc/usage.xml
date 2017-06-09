@@ -61,11 +61,16 @@
         <sitesearch>http://forge_mavenskin.forge.onehippo.org/</sitesearch>
       </googleSearch>
 
-  </hippoSkin>
+      <!-- Add a 'Fork me on GitHub' ribbon -->
+      <gitHub>
+        <projectId>onehippo-forge/forge-maven-skin</projectId>
+      </gitHub>
+   </hippoSkin>
 </custom>]]></source>
         </div>
         <p>Since the Hippo Skin is based on Maven's Fluido Skin, there are also settings for Ohloh, GitHub, Twitter, Facebook and Google Plus.
           Please refer to the <a href="https://maven.apache.org/skins/maven-fluido-skin">Maven Fluido Skin page</a> for documentation.</p>
+        <p>All custom settings should be supported, but they should be configured in element <tt>&lt;custom&gt;&lt;hippoSkin&gt;</tt> instead of <tt>&lt;custom&gt;&lt;fluidoSkin&gt;</tt></p>
       </subsection>
 
       <subsection name="Browser title and Header title">
