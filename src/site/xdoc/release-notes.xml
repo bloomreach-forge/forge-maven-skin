@@ -33,10 +33,10 @@
         <p class="smallinfo">Release Date: Sept 06, 2016</p>
         <ul>
           <li><a href="https://issues.onehippo.com/browse/HIPPLUG-1247">HIPPLUG-1247</a><br/>
-            Forge Maven Skin: Typography may look more close to Fluido.
+            Typography may look more close to Fluido.
           </li>
           <li><a href="https://issues.onehippo.com/browse/HIPPLUG-1354">HIPPLUG-1354</a><br/>
-            Forge Maven Skin: Change scheme of links to https
+            Change scheme of links to https.
           </li>
         </ul>
       </subsection>
@@ -44,13 +44,13 @@
         <p class="smallinfo">Release Date: Jan 14, 2016</p>
         <ul>
           <li><a href="https://issues.onehippo.com/browse/HIPPLUG-1242">HIPPLUG-1242</a><br/>
-            Forge Maven Skin: line numbers failing when generated on non-Windows env
+            Line numbers failing when generated on non-Windows env.
           </li>
           <li><a href="https://issues.onehippo.com/browse/HIPPLUG-1243">HIPPLUG-1243</a><br/>
-            Forge Maven Skin: Integrate with SyntaxHighlighter for source code generation
+            Integrate with SyntaxHighlighter for source code generation.
           </li>
           <li><a href="https://issues.onehippo.com/browse/HIPPLUG-1244">HIPPLUG-1244</a><br/>
-            Forge Maven Skin: Make (sub)section headers font bigger or more recognizable
+            Make (sub)section headers font bigger or more recognizable.
           </li>
         </ul>
       </subsection>
