@@ -17,10 +17,21 @@
  * under the License.
  */
 
-/* $Id: maven-base.css 1677464 2015-05-03 18:03:22Z khmarbaise $ */
+jQuery( document ).ready( function()
+{
+    // initialize the dropdown menu if found
+    $( '.topbar' ).dropdown();
 
-.clear{clear:both;visibility: hidden;}
-.clear hr{display: none;}
-.section p,.section p,.section dt,.section dt{margin-right: 7px;margin-left: 7px;}
-#ohloh {margin-bottom: 10px;}
-#poweredBy{text-align: center}
+    prettyPrint();
+
+} );
+
+function asyncJs( url ) {
+    ( function() {
+            var s = document.createElement( 'script' ), t = document.getElementsByTagName( 'script' )[0];
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url;
+            t.parentNode.insertBefore( s, t );
+        } )();
+}

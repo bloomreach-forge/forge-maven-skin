@@ -17,34 +17,52 @@
  * under the License.
  */
 
-/* $Id: maven-theme.css 1377307 2012-08-25 15:11:41Z rfscholte $ */
+/* $Id: maven-theme.css 1715187 2015-11-19 14:36:01Z michaelo $ */
 
 /*IE6/7 don't support selectors*/
 a.externalLink {
   padding-right: 18px;
 }
-a.newWindow{background: url('../images/window-new.png') right center no-repeat;padding-right: 18px;}
+a.newWindow {
+  background: url('../images/window-new.png') right center no-repeat;padding-right: 18px;
+}
 
 a.externalLink[href^=http] {
   background: url('../images/internet-web-browser.png') right center no-repeat;padding-right: 18px;
 }
-a.externalLink[href$=".asc"]{background: url('../images/accessories-text-editor.png') right center no-repeat;padding-right: 18px;}
+a.externalLink[href$=".asc"] {
+  background: url('../images/accessories-text-editor.png') right center no-repeat;padding-right: 18px;
+}
 a.externalLink[href$=".jpg"],
 a.externalLink[href$=".jpeg"],
 a.externalLink[href$=".gif"],
-a.externalLink[href$=".png"]{background: url('../images/image-x-generic.png') right center no-repeat;padding-right: 18px;}
+a.externalLink[href$=".png"] {
+  background: url('../images/image-x-generic.png') right center no-repeat;padding-right: 18px;
+}
 a.externalLink[href$=".tar.gz"],
-a.externalLink[href$=".zip"]{background: url('../images/package-x-generic.png') right center no-repeat;padding-right: 18px;}
+a.externalLink[href$=".zip"] {
+  background: url('../images/package-x-generic.png') right center no-repeat;padding-right: 18px;
+}
 a.externalLink[href$=".md5"],
-a.externalLink[href$=".sha1"]{background: url('../images/document-properties.png') right center no-repeat;padding-right: 18px;}
+a.externalLink[href$=".sha1"] {
+  background: url('../images/document-properties.png') right center no-repeat;padding-right: 18px;
+}
 a.externalLink[href^=https] {
   background: url('../images/application-certificate.png') right center no-repeat;padding-right: 18px;
 }
-a.externalLink[href^=file]{background: url('../images/drive-harddisk.png') right center no-repeat;padding-right: 18px;}
-a.externalLink[href^=ftp]{background: url('../images/network-server.png') right center no-repeat;padding-right: 18px;}
-a.externalLink[href^=mailto]{background: url('../images/contact-new.png') right center no-repeat;padding-right: 18px;}
+a.externalLink[href^=file] {
+  background: url('../images/drive-harddisk.png') right center no-repeat;padding-right: 18px;
+}
+a.externalLink[href^=ftp] {
+  background: url('../images/network-server.png') right center no-repeat;padding-right: 18px;
+}
+a.externalLink[href^=mailto] {
+  background: url('../images/contact-new.png') right center no-repeat;padding-right: 18px;
+}
 
-li.none{list-style: none;}
+li.none {
+  list-style: none;
+}
 
 .search-query {
   background-image: url(https://cse.google.com/cse/images/google_custom_search_watermark.gif);
@@ -53,19 +71,31 @@ li.none{list-style: none;}
   width:95%
 }
 
-body.topBarEnabled{padding-top: 60px;}
-body.topBarDisabled{padding-top: 20px;}
+body.topBarEnabled {
+  padding-top: 60px;
+}
+body.topBarDisabled {
+  padding-top: 20px;
+}
 
-.builtBy{display: block;}
-img.builtBy{margin: 10px auto;}
+.builtBy {
+  display: block;
+}
+img.builtBy {
+  margin: 10px auto;
+}
 
-#search-form{margin-left: 9px;margin-right:9px;}
+#search-form {
+  margin-left: 9px;margin-right:9px;
+}
 
 /* Tweaks to the bootstrap theme
 --------------------------------- */
 
 /* sections title are rendered using h2 instead of h1 */
-.hero-unit h2{font-size: 60px;}
+.hero-unit h2 {
+  font-size: 60px;
+}
 
 /* Copied from bootstrap <code> tag style. Maven translates <code> to <tt>. */
 tt {
@@ -75,13 +105,19 @@ tt {
 }
 
 /* avoid greyed list items */
-li{color:#404040;}
+li {
+  color:#404040;
+}
 
 /* avoid transparent background of table */
-table.zebra-striped{background-color:#FFF}
+table.zebra-striped {
+  background-color:#FFF
+}
 
 /* avoid transparent footer */
-.footer{background-color:#EEE}
+.footer {
+  background-color:#EEE
+}
 
 /* align with adjustments of http://twitter.github.com/bootstrap/examples/fluid.html */
 .sidebar-nav {
@@ -89,8 +125,7 @@ table.zebra-striped{background-color:#FFF}
     padding-right: 0px;
 }
 
-.sidebar-nav .icon-chevron-right, .sidebar-nav .icon-chevron-down
-{
+.sidebar-nav .icon-chevron-right, .sidebar-nav .icon-chevron-down {
   margin-top: 2px;
   margin-right: -6px;
   float: right;
