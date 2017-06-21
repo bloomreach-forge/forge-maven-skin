@@ -224,6 +224,10 @@
   </div>
 
   <div id="breadcrumbs">
+    <div class="links">
+      <a href="https://www.bloomreach.com">bloomreach.com</a>
+      <a href="https://www.onehippo.org">onehippo.org</a>
+    </div>
     <ul class="breadcrumb">
     #*      *##publishDate( "left" $decoration.publishDate $decoration.version )
     #*      *##publishDate( "right" $decoration.publishDate $decoration.version )
@@ -234,11 +238,6 @@
     #*        *##links( $decoration.body.links )
     #*      *##end
     </ul>
-
-    <div class="links">
-      <a href="https://www.bloomreach.com">bloomreach.com</a>
-      <a href="https://www.onehippo.org">onehippo.org</a>
-    </div>
     <div class="clear"><hr/></div>
   </div>
 ##

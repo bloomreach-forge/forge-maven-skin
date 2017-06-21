@@ -165,15 +165,16 @@ ol.linenums {
 }
 
 .breadcrumb {
-    float: left;
+    float: right;
     background: transparent;
     margin-bottom: 0;
+    margin-right: 25px;
     padding: 0px 15px;
 }
 
 #breadcrumbs .links {
-    float: right;
-    margin-right: 25px;
+    float: left;
+    margin-left: 10px;
 }
 
 #breadcrumbs .links a {
