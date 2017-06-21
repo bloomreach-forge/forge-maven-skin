@@ -420,6 +420,7 @@
 ##
 ##
 #macro ( publishDate $position $decorationPublishDate $version )
+
 #**##if ( $publishDate )
 #*  *##set ( $dateValue = $dateFormat.format( $publishDate ) )
 #**##elseif ( $decoration.custom.getChild( 'publishDate' ) )
@@ -444,7 +445,7 @@
 ##
 #**##if ( $datePosition.equalsIgnoreCase( $position ) )
 #*  *##if ( ( $datePosition.equalsIgnoreCase( "right" ) ) || ( $datePosition.equalsIgnoreCase( "bottom" ) ) )
-  <li id="publishDate" class="pull-right">$prefix$i18n.getString( "site-renderer", $locale, "template.lastpublished" ): $dateValue</li>
+  <li id="publishDate" class="pull-right">published: $dateValue</li>
   #*    *##if ( $versionPosition.equalsIgnoreCase( $position ) )
     <li id="projectVersion" class="pull-right">##
     #*      *##if ( !$topBarEnabled
@@ -457,13 +458,13 @@
     #*    *##end
   #*  *##elseif ( ( $datePosition.equalsIgnoreCase( "navigation-bottom" ) ) || ( $datePosition.equalsIgnoreCase( "navigation-top" ) ) )
   <div id="lastPublished">
-    <span id="publishDate">$i18n.getString( "site-renderer", $locale, "template.lastpublished" ): $dateValue</span>
+    <span id="publishDate">published: $dateValue</span>
   #*    *##if ( $versionPosition.equalsIgnoreCase( $position ) )
     <span class="divider">|</span> <span id="projectVersion">$i18n.getString( "site-renderer", $locale, "template.version" ): ${project.version}</span>
   #*    *##end
   </div>
   #*  *##elseif ( $datePosition.equalsIgnoreCase("left") )
-  <li id="publishDate">$i18n.getString( "site-renderer", $locale, "template.lastpublished" ): $dateValue##
+  <li id="publishDate">published: $dateValue##Just
   #*   #if ( $versionPosition.equalsIgnoreCase( $position ) || $breadcrumbs && $breadcrumbs.size() > 0)
         <span class="divider">|</span>
        #end*#
