@@ -20,6 +20,14 @@
   </properties>
   <body>
     <section name="Release Notes">
+      <subsection name="2.0.1">
+        <p class="smallinfo">Release Date: 11 July 2017</p>
+        <ul>
+          <li>Fix for <tt>&lt;span&gt;</tt> elements appearing in source blocks.
+            This resulted from a conflict between 'prettyprint' and 'syntaxhighlighter' Javascripts, so now the skin no
+            longer supports the <code>sourceLineNumbersEnabled</code> setting that 'prettyprint' uses.</li>
+        </ul>
+      </subsection>
       <subsection name="2.0.0">
         <p class="smallinfo">Release Date: 21 June 2017</p>
         <ul>
