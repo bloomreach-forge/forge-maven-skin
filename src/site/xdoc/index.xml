@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright 2012-2014 Hippo
+  Copyright 2012-2018 BloomReach, Inc.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -23,9 +23,9 @@
   </properties>
   <body>
     <section name="Introduction">
-        <subsection name="What is the Hippo Forge Maven Skin?">
+        <subsection name="What is the BloomReach Forge Maven Skin?">
             <p>
-              The Hippo Forge Maven Skin is a Maven site skin based on
+              The BloomReach Forge Maven Skin is a Maven site skin based on
               <a href="http://maven.apache.org/skins/maven-fluido-skin">Apache Maven Fluido Skin</a>.
               That skin is based on <a href="http://twitter.github.com/bootstrap">Twitter's bootstrap</a> frontend framework.
             </p>

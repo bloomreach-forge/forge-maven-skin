@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright 2012-2017 Hippo
+  Copyright 2012-2018 BloomReach, Inc.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -14,28 +14,28 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<project name="Hippo Forge Maven Skin">
+<project name="BloomReach Forge Maven Skin">
 
   <skin>
-    <groupId>org.onehippo.forge.mavenskin</groupId>
+    <groupId>org.bloomreach.forge.mavenskin</groupId>
     <artifactId>forge-maven-skin</artifactId>
-    <version>2.0.1</version>
+    <version>3.0.0-SNAPSHOT</version>
   </skin>
 
   <custom>
-    <hippoSkin>
+    <bloomreach>
 
       <!-- Render a google search box (no box when absent) -->
       <googleSearch>
         <!-- Optional setting on where to do the search (it will search on the current site if the sitesearch tag is absent) -->
-        <sitesearch>http://forge_mavenskin.forge.onehippo.org/</sitesearch>
+        <sitesearch>https://onehippo-forge.github.io/forge-maven-skin/</sitesearch>
       </googleSearch>
 
       <!-- Add a 'Fork me on GitHub' ribbon  -->
       <gitHub>
         <projectId>onehippo-forge/forge-maven-skin</projectId>
       </gitHub>
-    </hippoSkin>
+    </bloomreach>
   </custom>
 
   <body>

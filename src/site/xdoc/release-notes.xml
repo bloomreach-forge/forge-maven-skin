@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  Copyright 2012-2017 Hippo
+  Copyright 2012-2018 BloomReach, Inc.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -20,6 +20,18 @@
   </properties>
   <body>
     <section name="Release Notes">
+      <subsection name="3.0.0">
+        <p class="smallinfo">Release Date: 1 November 2018</p>
+        <p><a href="https://issues.onehippo.com/browse/HIPFORGE-231">HIPFORGE-231</a> Rebranding from Hippo to BloomReach</p>
+        <ul>
+          <li>Logo change, plus adding a site icon link.</li>
+          <li>Rename Maven groupId from <code>org.onehippo.forge.mavenskin</code> to <code>org.bloomreach.forge.mavenskin</code>,
+            see the <a href="usage.html">usage page</a>.</li>
+          <li>Rename custom configuration element from &lt;hippoSkin&gt; to &lt;bloomreach&gt;,
+            see the <a href="usage.html">usage page</a>.</li>
+          <li>Changed copyright notices.</li>
+        </ul>
+      </subsection>
       <subsection name="2.0.1">
         <p class="smallinfo">Release Date: 11 July 2017</p>
         <ul>
