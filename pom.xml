@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright 2012-2017 Hippo
+  Copyright 2012-2018 BloomReach, Inc.
 
   Licensed under the Apache License, Version 2.0 (the  "License");
   you may not use this file except in compliance with the License.
@@ -17,10 +17,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <name>Hippo Forge Maven Skin</name>
-  <groupId>org.onehippo.forge.mavenskin</groupId>
+  <name>BloomReach Forge Maven Skin</name>
+  <groupId>org.bloomreach.forge.mavenskin</groupId>
   <artifactId>forge-maven-skin</artifactId>
-  <version>2.0.2-SNAPSHOT</version>
+  <version>3.0.0-SNAPSHOT</version>
 
   <inceptionYear>2012</inceptionYear>
 
@@ -28,12 +28,12 @@
     <developer>
       <name>Jeroen Hoffman</name>
       <id>jhoffman</id>
-      <email>j.hoffman@onehippo.com</email>
+      <email>jeroen.hoffman@bloomreach.com</email>
     </developer>
     <developer>
       <name>Joeri de Gooijer</name>
       <id>jdegooijer</id>
-      <email>j.degooijer@onehippo.com</email>
+      <email>joeri.degooijer@bloomreach.com</email>
     </developer>
   </developers>
 
@@ -54,7 +54,7 @@
   </distributionManagement>
 
   <issueManagement>
-    <system>Hippo JIRA</system>
+    <system>JIRA</system>
     <url>https://issues.onehippo.com/browse/HIPFORGE</url>
   </issueManagement>
 
@@ -136,7 +136,7 @@
                 <cssSourceFile>maven-base.css</cssSourceFile>
                 <cssSourceFile>maven-theme.css</cssSourceFile>
                 <cssSourceFile>prettify.css</cssSourceFile>
-                <cssSourceFile>hippostyle.css</cssSourceFile>
+                <cssSourceFile>br-style.css</cssSourceFile>
               </cssSourceFiles>
               <cssFinalFile>forge-maven-skin-${project.version}.css</cssFinalFile>
               <jsSourceDir>js</jsSourceDir>
@@ -210,6 +210,11 @@
           <inputEncoding>UTF-8</inputEncoding>
         </configuration>
         <version>3.6</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.9</version>
       </plugin>
     </plugins>
   </build>

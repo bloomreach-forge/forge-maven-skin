@@ -1,9 +1,9 @@
 [![Build Status](https://travis-ci.org/onehippo-forge/forge-maven-skin.svg?branch=develop)](https://travis-ci.org/onehippo-forge/forge-maven-skin)
 
-# Hippo Forge Maven Skin
+# BloomReach Forge Maven Skin
 
 
-The Hippo Forge Maven Skin is a Maven site skin based on Apache Maven Fluido Skin which in its turn is based on 
+The BloomReach Forge Maven Skin is a Maven site skin based on Apache Maven Fluido Skin which in its turn is based on 
 Twitter's bootstrap frontend framework.  
 
 # Documentation 
