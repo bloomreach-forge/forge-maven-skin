@@ -1,4 +1,4 @@
-/* Hippo style for forge maven skin */
+/* BloomReach style for forge maven skin */
 
 body {
     font-family: Arial,sans-serif;
@@ -71,7 +71,7 @@ tt {
 }
 
 .section p {
-    margin: 0px 0px 14px;
+    margin: 3px 0px 14px;
 }
 
 .section ul, .section ol {
@@ -119,15 +119,16 @@ pre * {
     font-family: Arial, sans-serif;
 }
 
-
 .breadcrumb li {
     text-shadow: none;
     color: #ffffff;
 }
 
-
 #banner #logo {
     float: left;
+    height: 70px;
+    width: 60px;
+    margin-left: 5px;
 }
 
 #header h1 {
@@ -218,5 +219,5 @@ div.source {
 }
 
 a.externalLink[href^=http], a.externalLink[href^=https] {
-    background: url('../images/hipposkin/external_link_icon.gif') right center no-repeat;padding-right: 18px;
+    background: url('../images/skin/external_link_icon.gif') right center no-repeat;padding-right: 18px;
 }
