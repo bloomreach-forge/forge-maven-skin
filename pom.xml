@@ -20,7 +20,7 @@
   <name>BloomReach Forge Maven Skin</name>
   <groupId>org.bloomreach.forge.mavenskin</groupId>
   <artifactId>forge-maven-skin</artifactId>
-  <version>3.0.0</version>
+  <version>3.0.1-SNAPSHOT</version>
 
   <inceptionYear>2012</inceptionYear>
 
