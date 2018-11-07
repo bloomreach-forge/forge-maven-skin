@@ -28,12 +28,12 @@
       <!-- Render a google search box (no box when absent) -->
       <googleSearch>
         <!-- Optional setting on where to do the search (it will search on the current site if the sitesearch tag is absent) -->
-        <sitesearch>https://onehippo-forge.github.io/forge-maven-skin/</sitesearch>
+        <sitesearch>https://bloomreach-forge.github.io/forge-maven-skin/</sitesearch>
       </googleSearch>
 
       <!-- Add a 'Fork me on GitHub' ribbon  -->
       <gitHub>
-        <projectId>onehippo-forge/forge-maven-skin</projectId>
+        <projectId>bloomreach-forge/forge-maven-skin</projectId>
       </gitHub>
     </bloomreach>
   </custom>
