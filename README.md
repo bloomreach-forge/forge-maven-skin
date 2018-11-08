@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/onehippo-forge/forge-maven-skin.svg?branch=develop)](https://travis-ci.org/onehippo-forge/forge-maven-skin)
+[![Build Status](https://travis-ci.org/bloomreach-forge/forge-maven-skin.svg?branch=develop)](https://travis-ci.org/bloomreach-forge/forge-maven-skin)
 
 # BloomReach Forge Maven Skin
 
@@ -8,7 +8,7 @@ Twitter's bootstrap frontend framework.
 
 # Documentation 
 
-Documentation is available at [onehippo-forge.github.io/forge-maven-skin](https://onehippo-forge.github.io/forge-maven-skin)
+Documentation is available at [bloomreach-forge.github.io/forge-maven-skin](https://bloomreach-forge.github.io/forge-maven-skin)
 
 It is built by this command:
 

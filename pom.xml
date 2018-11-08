@@ -20,7 +20,7 @@
   <name>BloomReach Forge Maven Skin</name>
   <groupId>org.bloomreach.forge.mavenskin</groupId>
   <artifactId>forge-maven-skin</artifactId>
-  <version>3.0.0</version>
+  <version>3.0.1</version>
 
   <inceptionYear>2012</inceptionYear>
 
@@ -38,9 +38,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git@github.com:onehippo-forge/forge-maven-skin.git</connection>
-    <developerConnection>scm:git:git@github.com:onehippo-forge/forge-maven-skin.git</developerConnection>
-    <url>https://github.com/onehippo-forge/forge-maven-skin.git</url>
+    <connection>scm:git:git@github.com:bloomreach-forge/forge-maven-skin.git</connection>
+    <developerConnection>scm:git:git@github.com:bloomreach-forge/forge-maven-skin.git</developerConnection>
+    <url>https://github.com/bloomreach-forge/forge-maven-skin.git</url>
     <tag>HEAD</tag>
   </scm>
 

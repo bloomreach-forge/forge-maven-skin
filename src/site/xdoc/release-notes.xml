@@ -20,6 +20,12 @@
   </properties>
   <body>
     <section name="Release Notes">
+      <subsection name="3.0.1">
+        <p class="smallinfo">Release Date: 8 November 2018</p>
+        <ul>
+          <li>Set the URL behind the logo at github.com/bloomreach-forge.</li>
+        </ul>
+      </subsection>
       <subsection name="3.0.0">
         <p class="smallinfo">Release Date: 1 November 2018</p>
         <p><a href="https://issues.onehippo.com/browse/HIPFORGE-231">HIPFORGE-231</a> Rebranding from Hippo to BloomReach</p>

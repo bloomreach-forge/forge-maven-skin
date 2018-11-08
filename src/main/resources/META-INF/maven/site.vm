@@ -203,7 +203,7 @@
 #**##end
   <div id="banner">
     <div id="logo">
-      <a href="http://www.github.com/onehippo-forge">
+      <a href="http://www.github.com/bloomreach-forge">
         <img src="$relativePath/images/skin/logo.png" alt="BloomReach Forge Logo" />
       </a>
     </div>
