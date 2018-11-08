@@ -21,7 +21,7 @@
   <body>
     <section name="Release Notes">
       <subsection name="3.0.1">
-        <p class="smallinfo">Release Date: 7 November 2018</p>
+        <p class="smallinfo">Release Date: 8 November 2018</p>
         <ul>
           <li>Set the URL behind the logo at github.com/bloomreach-forge.</li>
         </ul>
