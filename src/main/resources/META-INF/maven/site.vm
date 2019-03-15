@@ -203,7 +203,12 @@
 #**##end
   <div id="banner">
     <div id="logo">
-      <a href="http://www.github.com/bloomreach-forge">
+        #set ($logoUrl = 'https://bloomreach-forge.github.io')
+        #if ($decoration.custom.getChild('bloomreach')
+          && $decoration.custom.getChild('bloomreach').getChild('logoUrl') )
+          #set ($logoUrl = $decoration.custom.getChild('bloomreach').getChild('logoUrl').getValue())
+        #end
+        <a href="$logoUrl">
         <img src="$relativePath/images/skin/logo.png" alt="BloomReach Forge Logo" />
       </a>
     </div>
@@ -226,9 +231,19 @@
   </div>
 
   <div id="breadcrumbs">
+    #set ($breadcrumbLink1 = 'documentation.bloomreach.com')
+    #set ($breadcrumbLink2 = 'developers.bloomreach.com')
+    #if ($decoration.custom.getChild('bloomreach'))
+      #if ($decoration.custom.getChild('bloomreach').getChild('breadcrumbLink1') )
+        #set ($breadcrumbLink1 = $decoration.custom.getChild('bloomreach').getChild('breadcrumbLink1').getValue())
+      #end
+      #if ($decoration.custom.getChild('bloomreach').getChild('breadcrumbLink2') )
+        #set ($breadcrumbLink2 = $decoration.custom.getChild('bloomreach').getChild('breadcrumbLink2').getValue())
+      #end
+    #end
     <div class="links">
-      <a href="https://developers.bloomreach.com">developers.bloomreach.com</a>
-      <a href="https://www.onehippo.org">onehippo.org</a>
+      <a href="https://$breadcrumbLink1">$breadcrumbLink1</a>
+      <a href="https://$breadcrumbLink2">$breadcrumbLink2</a>
     </div>
     <ul class="breadcrumb">
     #*      *##publishDate( "left" $decoration.publishDate $decoration.version )

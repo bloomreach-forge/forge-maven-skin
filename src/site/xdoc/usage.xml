@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  Copyright 2012-2018 BloomReach, Inc.
+  Copyright 2012-2019 BloomReach, Inc.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -66,6 +66,14 @@
       <gitHub>
         <projectId>bloomreach-forge/forge-maven-skin</projectId>
       </gitHub>
+
+      <!-- Configurable URL behind the BloomReach logo, defaulting to https://bloomreach-forge.github.io -->
+      <logoUrl>https://www.mysite.com</logoUrl>
+
+      <!-- Two configurable breadcrumb items, defaulting to 'documentation.bloomreach.com' and 'developers.bloomreach.com'
+           Protocol https:// will be prepended for the URL -->
+      <breadcrumbLink1>www1.mysite.com</breadcrumbLink1>
+      <breadcrumbLink2>www2.mysite.com</breadcrumbLink2>
    </bloomreach>
 </custom>]]></source>
         </div>
