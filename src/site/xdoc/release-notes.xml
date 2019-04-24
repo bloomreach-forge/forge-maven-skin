@@ -20,6 +20,12 @@
   </properties>
   <body>
     <section name="Release Notes">
+      <subsection name="3.1.1">
+        <p class="smallinfo">Release Date: 24 April 2019</p>
+        <ul>
+          <li>Change the copyright statement at the bottom to have 'BloomReach Inc.' per default.</li>
+        </ul>
+      </subsection>
       <subsection name="3.1.0">
         <p class="smallinfo">Release Date: 15 March 2019</p>
         <ul>

@@ -202,7 +202,7 @@ ol.linenums {
     margin-top: -14px;
 }
 
-p.copyright {
+p.copyright, p.copyright a {
     font-style: italic;
     font-size: 12px;
 }
