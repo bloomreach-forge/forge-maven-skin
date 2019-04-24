@@ -38,7 +38,7 @@
 <skin>
   <groupId>org.bloomreach.forge.mavenskin</groupId>
   <artifactId>forge-maven-skin</artifactId>
-  <version>3.1.0</version>
+  <version>3.1.1</version>
 </skin>]]></source>
             </div>
             <p>Note: before version 3.0.0, the <code>groupId</code> was <code>org.onehippo.forge.mavenskin</code>.</p>
