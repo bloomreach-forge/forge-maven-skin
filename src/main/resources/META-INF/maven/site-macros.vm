@@ -407,13 +407,19 @@
   #*    *#${currentYear}${period}
   #*  *##end
 ##
-#*  *##if ( ${project.organization} )
-  #*    *##if ( ${project.organization.name} && ${project.organization.url} )
-    #*      *#<a href="$project.organization.url">${project.organization.name}</a>.
-    #*    *##elseif ( ${project.organization.name} )
-    #*      *#${project.organization.name}.
-    #*    *##end
+#*  *##if ( ${project.organization} && ${project.organization.name} )
+        #if ( ${project.organization.name.contains('Hippo')} )
+          <a href="https://www.bloomreach.com">BloomReach Inc.</a>.
+        #else
+  #*    *##if ( ${project.organization.url} )
+  #*      *#<a href="$project.organization.url">${project.organization.name}</a>.
+  #*    *##else
+  #*      *#${project.organization.name}.
+  #*    *##end
   #*  *##end
+      #else
+        <a href="https://www.bloomreach.com">BloomReach Inc.</a>.
+      #end
 #**##end
 #end
 ##

@@ -335,7 +335,7 @@
   #*      *##if ( $decoration.custom.getChild( 'bloomreach' ) && $decoration.custom.getChild( 'bloomreach' ).getChild('copyrightClass') )
       #*        *##set ( $copyrightClass = ' class="copyright ' + $decoration.custom.getChild( 'bloomreach' ).getChild('copyrightClass').getValue() + '"' )
       #*      *##end
-    <p$!copyrightClass>Copyright &copy;#copyright()BloomReach Inc. All rights reserved.#publishDate( "bottom" $decoration.publishDate $decoration.version )</p>
+    <p$!copyrightClass>Copyright &copy;#copyright()#publishDate( "bottom" $decoration.publishDate $decoration.version )</p>
   #*    *##end
   </div>
   ##
