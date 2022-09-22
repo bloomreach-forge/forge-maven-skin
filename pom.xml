@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright 2012-2019 BloomReach, Inc.
+  Copyright 2012-2022 Bloomreach, Inc.
 
   Licensed under the Apache License, Version 2.0 (the  "License");
   you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <name>BloomReach Forge Maven Skin</name>
+  <name>Bloomreach Forge Maven Skin</name>
   <groupId>org.bloomreach.forge.mavenskin</groupId>
   <artifactId>forge-maven-skin</artifactId>
   <version>3.1.2-SNAPSHOT</version>

@@ -209,7 +209,7 @@
           #set ($logoUrl = $decoration.custom.getChild('bloomreach').getChild('logoUrl').getValue())
         #end
         <a href="$logoUrl">
-        <img src="$relativePath/images/skin/logo.png" alt="BloomReach Forge Logo" />
+        <img src="$relativePath/images/skin/logo.png" alt="Bloomreach Forge Logo" />
       </a>
     </div>
     <div class="pull-left">##
@@ -300,7 +300,7 @@
   #*      *##if ( $title && $title.endsWith( "Project License" ) )
   #*        *#$bodyContent
   #*      *##else
-  #*   sourceLineNumbersEnabled no longer supported by BloomReach skin: we use syntaxhighlighter which conflicts with prettyprint
+  #*   sourceLineNumbersEnabled no longer supported by Bloomreach skin: we use syntaxhighlighter which conflicts with prettyprint
   #*        #if ( $decoration.custom.getChild('bloomreach')
       && $decoration.custom.getChild( 'bloomreach' ).getChild( 'sourceLineNumbersEnabled' )
       && 'true' == $decoration.custom.getChild( 'bloomreach' ).getChild( 'sourceLineNumbersEnabled' ).getValue() )
