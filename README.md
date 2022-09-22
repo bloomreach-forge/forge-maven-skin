@@ -1,9 +1,6 @@
-[![Build Status](https://travis-ci.org/bloomreach-forge/forge-maven-skin.svg?branch=develop)](https://travis-ci.org/bloomreach-forge/forge-maven-skin)
+# Bloomreach Forge Maven Skin
 
-# BloomReach Forge Maven Skin
-
-
-The BloomReach Forge Maven Skin is a Maven site skin based on Apache Maven Fluido Skin which in its turn is based on 
+The Bloomreach Forge Maven Skin is a Maven site skin based on Apache Maven Fluido Skin which in its turn is based on 
 Twitter's bootstrap frontend framework.  
 
 # Documentation 

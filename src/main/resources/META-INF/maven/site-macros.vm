@@ -409,7 +409,7 @@
 ##
 #*  *##if ( ${project.organization} && ${project.organization.name} )
         #if ( ${project.organization.name.contains('Hippo')} )
-          <a href="https://www.bloomreach.com">BloomReach Inc.</a>.
+          <a href="https://www.bloomreach.com">Bloomreach Inc.</a>.
         #else
   #*    *##if ( ${project.organization.url} )
   #*      *#<a href="$project.organization.url">${project.organization.name}</a>.
@@ -418,7 +418,7 @@
   #*    *##end
   #*  *##end
       #else
-        <a href="https://www.bloomreach.com">BloomReach Inc.</a>.
+        <a href="https://www.bloomreach.com">Bloomreach Inc.</a>.
       #end
 #**##end
 #end
