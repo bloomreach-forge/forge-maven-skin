@@ -231,7 +231,7 @@
   </div>
 
   <div id="breadcrumbs">
-    #set ($breadcrumbLink1 = 'documentation.bloomreach.com')
+    #set ($breadcrumbLink1 = 'xmdocumentation.bloomreach.com')
     #set ($breadcrumbLink2 = 'developers.bloomreach.com')
     #if ($decoration.custom.getChild('bloomreach'))
       #if ($decoration.custom.getChild('bloomreach').getChild('breadcrumbLink1') )
