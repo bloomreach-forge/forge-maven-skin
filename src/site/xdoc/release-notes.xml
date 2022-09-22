@@ -20,6 +20,13 @@
   </properties>
   <body>
     <section name="Release Notes">
+      <subsection name="3.2.0">
+        <p class="smallinfo">Release Date: 22 September 2022</p>
+        <ul>
+          <li>Change logo, now with a yellow Bloomreach 'b'.</li>
+          <li>Change first menu link from 'documentation' to 'xmdocumentation.bloomreach.com'.</li>
+        </ul>
+      </subsection>
       <subsection name="3.1.1">
         <p class="smallinfo">Release Date: 24 April 2019</p>
         <ul>
