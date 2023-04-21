@@ -20,6 +20,12 @@
   </properties>
   <body>
     <section name="Release Notes">
+      <subsection name="3.2.1">
+        <p class="smallinfo">Release Date: ??</p>
+        <ul>
+          <li>Updated references to Forge maven repositories to use https, and to use the bloomreach domain.</li>
+        </ul>
+      </subsection>
       <subsection name="3.2.0">
         <p class="smallinfo">Release Date: 22 September 2022</p>
         <ul>

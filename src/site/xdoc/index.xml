@@ -26,8 +26,8 @@
         <subsection name="What is the Bloomreach Forge Maven Skin?">
             <p>
               The Bloomreach Forge Maven Skin is a Maven site skin based on
-              <a href="http://maven.apache.org/skins/maven-fluido-skin">Apache Maven Fluido Skin</a>.
-              That skin is based on <a href="http://twitter.github.com/bootstrap">Twitter's bootstrap</a> frontend framework.
+              <a href="https://maven.apache.org/skins/maven-fluido-skin">Apache Maven Fluido Skin</a>.
+              That skin is based on <a href="https://bootstrapdocs.com/v2.3.2/docs/">Twitter's bootstrap</a> frontend framework.
             </p>
         </subsection>
         <subsection name="Documentation">
