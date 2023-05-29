@@ -74,6 +74,15 @@
     </repository>
   </repositories>
 
+  <properties>
+    <bootstrap.version>2.3.2</bootstrap.version>
+    <jquery.version>1.11.2</jquery.version>
+    <site-plugin.version>3.12.0</site-plugin.version>
+    <project-info-reports-plugin.version>3.3.0</project-info-reports-plugin.version>
+    <minify-maven-plugin.version>1.7.6</minify-maven-plugin.version>
+    <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
+  </properties>
+
   <build>
     <resources>
       <!-- exclude css and js since will include the minified version -->
@@ -110,19 +119,24 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
-        <version>3.0.2</version>
+        <version>${maven-resources-plugin.version}</version>
         <configuration>
           <encoding>UTF-8</encoding>
           <delimiters>
             <delimiter>@</delimiter>
           </delimiters>
           <useDefaultDelimiters>false</useDefaultDelimiters>
+          <nonFilteredFileExtensions>
+            <nonFilteredFileExtension>eot</nonFilteredFileExtension>
+            <nonFilteredFileExtension>ttf</nonFilteredFileExtension>
+            <nonFilteredFileExtension>woff</nonFilteredFileExtension>
+          </nonFilteredFileExtensions>
         </configuration>
       </plugin>
       <plugin>
         <groupId>com.samaxes.maven</groupId>
-        <artifactId>maven-minify-plugin</artifactId>
-        <version>1.3.5</version>
+        <artifactId>minify-maven-plugin</artifactId>
+        <version>${minify-maven-plugin.version}</version>
         <executions>
           <execution>
             <id>default-minify</id>
@@ -131,23 +145,25 @@
               <webappSourceDir>${basedir}/src/main/resources</webappSourceDir>
               <cssSourceDir>css</cssSourceDir>
               <cssSourceFiles>
-                <cssSourceFile>bootstrap-2.3.2.css</cssSourceFile>
-                <cssSourceFile>bootstrap-2.3.2-responsive.css</cssSourceFile>
+                <cssSourceFile>bootstrap-${bootstrap.version}.css</cssSourceFile>
+                <cssSourceFile>bootstrap-${bootstrap.version}-responsive.css</cssSourceFile>
                 <cssSourceFile>maven-base.css</cssSourceFile>
                 <cssSourceFile>maven-theme.css</cssSourceFile>
                 <cssSourceFile>prettify.css</cssSourceFile>
+                <cssSourceFile>gh-fork-ribbon.css</cssSourceFile>
                 <cssSourceFile>br-style.css</cssSourceFile>
               </cssSourceFiles>
               <cssFinalFile>forge-maven-skin-${project.version}.css</cssFinalFile>
               <jsSourceDir>js</jsSourceDir>
               <jsSourceFiles>
-                <jsSourceFile>jquery-1.11.2.js</jsSourceFile>
-                <jsSourceFile>bootstrap-2.3.2.js</jsSourceFile>
-                <jsSourceFile>fluido.js</jsSourceFile>
+                <jsSourceFile>jquery-${jquery.version}.js</jsSourceFile>
+                <jsSourceFile>bootstrap-${bootstrap.version}.js</jsSourceFile>
                 <jsSourceFile>prettify.js</jsSourceFile>
+                <jsSourceFile>fluido.js</jsSourceFile>
                 <jsSourceFile>main.js</jsSourceFile>
               </jsSourceFiles>
               <jsFinalFile>forge-maven-skin-${project.version}.js</jsFinalFile>
+              <jsEngine>CLOSURE</jsEngine>
             </configuration>
             <goals>
               <goal>minify</goal>
@@ -163,7 +179,7 @@
                 <cssSourceFile>shCore.css</cssSourceFile>
                 <cssSourceFile>shThemeDefault.css</cssSourceFile>
               </cssSourceFiles>
-              <cssFinalFile>forge-maven-skin-syntaxhighlighter-${project.version}.css</cssFinalFile>
+              <cssFinalFile>../forge-maven-skin-syntaxhighlighter-${project.version}.css</cssFinalFile>
               <jsSourceDir>js/syntaxhighlighter-3.0.83</jsSourceDir>
               <jsSourceFiles>
                 <jsSourceFile>shCore.js</jsSourceFile>
@@ -194,7 +210,7 @@
                 <jsSourceFile>shBrushVb.js</jsSourceFile>
                 <jsSourceFile>shBrushXml.js</jsSourceFile>
               </jsSourceFiles>
-              <jsFinalFile>forge-maven-skin-syntaxhighlighter-${project.version}.js</jsFinalFile>
+              <jsFinalFile>../forge-maven-skin-syntaxhighlighter-${project.version}.js</jsFinalFile>
             </configuration>
             <goals>
               <goal>minify</goal>
@@ -209,12 +225,12 @@
           <outputDirectory>docs</outputDirectory>
           <inputEncoding>UTF-8</inputEncoding>
         </configuration>
-        <version>3.6</version>
+        <version>${site-plugin.version}</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>2.9</version>
+        <version>${project-info-reports-plugin.version}</version>
       </plugin>
     </plugins>
   </build>

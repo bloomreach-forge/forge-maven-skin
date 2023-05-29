@@ -27,8 +27,7 @@
           Use &lt;b&gt; for <b>bold text</b> or &lt;strong&gt; for <strong>strong text</strong>.<br/>
           Use &lt;tt&gt; or &lt;code&gt; for <tt>monospaced text</tt>.
         </p>
-        <p>Use a regular &lt;a&gt; for a <a href="https://www.bloomreach.com">http link</a> or a
-          <a href="https://developers.bloomreach.com">https link</a> or a <a href="mailto:info@bloomreach.com">mailto link</a>.</p>
+        <p>Use a regular &lt;a&gt; for a <a href="https://www.bloomreach.com">https link</a> or a <a href="mailto:info@bloomreach.com">mailto link</a>.</p>
         <p class="note">This is a notice, created by adding class <code>note</code> to an element.</p>
         <p class="smallinfo">This extra information, created by adding class <code>smallinfo</code> to an element,
         developed for the release dates below version headers in release notes.</p>

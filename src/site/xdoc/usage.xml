@@ -70,7 +70,7 @@
       <!-- Configurable URL behind the Bloomreach logo, defaulting to https://bloomreach-forge.github.io -->
       <logoUrl>https://www.mysite.com</logoUrl>
 
-      <!-- Two configurable breadcrumb items, defaulting to 'documentation.bloomreach.com' and 'developers.bloomreach.com'
+      <!-- Two configurable breadcrumb items, defaulting to 'xmdocumentation.bloomreach.com' and 'github.com/bloomreach-forge'
            Protocol https:// will be prepended for the URL -->
       <breadcrumbLink1>www1.mysite.com</breadcrumbLink1>
       <breadcrumbLink2>www2.mysite.com</breadcrumbLink2>

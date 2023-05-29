@@ -23,6 +23,7 @@
       <subsection name="3.2.1">
         <p class="smallinfo">Release Date: ??</p>
         <ul>
+          <li><a href="https://issues.onehippo.com/browse/FORGE-447">Fixed "Fork me on Github" ribbon.</a></li>
           <li>Updated references to Forge maven repositories to use https, and to use the bloomreach domain.</li>
         </ul>
       </subsection>
