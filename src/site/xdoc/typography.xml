@@ -27,8 +27,7 @@
           Use &lt;b&gt; for <b>bold text</b> or &lt;strong&gt; for <strong>strong text</strong>.<br/>
           Use &lt;tt&gt; or &lt;code&gt; for <tt>monospaced text</tt>.
         </p>
-        <p>Use a regular &lt;a&gt; for a <a href="http://www.bloomreach.com">http link</a> or a
-          <a href="https://developers.bloomreach.com">https link</a> or a <a href="mailto:info@bloomreach.com">mailto link</a>.</p>
+        <p>Use a regular &lt;a&gt; for a <a href="https://www.bloomreach.com">https link</a> or a <a href="mailto:info@bloomreach.com">mailto link</a>.</p>
         <p class="note">This is a notice, created by adding class <code>note</code> to an element.</p>
         <p class="smallinfo">This extra information, created by adding class <code>smallinfo</code> to an element,
         developed for the release dates below version headers in release notes.</p>
@@ -42,11 +41,11 @@
   <repository>
     <id>hippo-forge</id>
     <name>Hippo Forge Maven 2 repository.</name>
-    <url>http://maven.onehippo.com/maven2-forge/</url>
+    <url>https://maven.bloomreach.com/repository/maven2-forge/</url>
   </repository>]]></source>
       <p>
         <b>&lt;source&gt;</b> element will be displayed in 'plain' mode by default
-        , using <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a> automatically.
+        , using <a href="https://github.com/syntaxhighlighter/syntaxhighlighter">SyntaxHighlighter</a> automatically.
       </p>
       <p>
         If you want to render the source in better syntax highlighting, then you can wrap the <b>&lt;source&gt;</b>
@@ -58,12 +57,12 @@
   <repository>
     <id>hippo-forge</id>
     <name>Hippo Forge Maven 2 repository.</name>
-    <url>http://maven.onehippo.com/maven2-forge/</url>
+    <url>https://maven.bloomreach.com/repository/maven2-forge/</url>
   </repository>]]></source>
       </div>
       <p>
         You can use 'plain', 'xml', 'java', 'javascript', 'groovy', 'html', 'shell' and more!
-        Please find more on how to use different brushes and options at <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a>.
+        Please find more on how to use different brushes and options at <a href="https://github.com/syntaxhighlighter/syntaxhighlighter">SyntaxHighlighter</a>.
       </p>
     </section>
     <section name="Alerts">

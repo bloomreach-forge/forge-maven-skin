@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  Copyright 2012-2022 Bloomreach, Inc.
+  Copyright 2012-2023 Bloomreach, Inc.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -20,6 +20,14 @@
   </properties>
   <body>
     <section name="Release Notes">
+      <subsection name="3.2.1">
+        <p class="smallinfo">Release Date: ??</p>
+        <ul>
+          <li><a href="https://issues.onehippo.com/browse/FORGE-447">FORGE-447</a>
+            Fixed "Fork me on Github" ribbon.</li>
+          <li>Updated references to Forge maven repositories to use https, and to use the bloomreach domain.</li>
+        </ul>
+      </subsection>
       <subsection name="3.2.0">
         <p class="smallinfo">Release Date: 22 September 2022</p>
         <ul>
@@ -36,10 +44,10 @@
       <subsection name="3.1.0">
         <p class="smallinfo">Release Date: 15 March 2019</p>
         <ul>
-          <li><a href="https://issues.onehippo.com/browse/HIPFORGE-281">HIPFORGE-281</a>
+          <li><a href="https://issues.onehippo.com/browse/FORGE-281">FORGE-281</a>
             Set the URL behind the logo at bloomreach-forge.github.io, instead of to github.com/bloomreach-forge,
             and make it configurable in the descriptor element &lt;logoUrl&gt;, see the <a href="usage.html">usage page</a>.</li>
-          <li><a href="https://issues.onehippo.com/browse/HIPFORGE-281">HIPFORGE-281</a>
+          <li><a href="https://issues.onehippo.com/browse/FORGE-281">FORGE-281</a>
             Rename one of the two breadcrumb links from onehippo.org to documentatioon.bloomreach.com and make both
             links configurable in the descriptor elements &lt;breadcrumbLink1&gt; and &lt;breadcrumbLink2&gt;, see the <a href="usage.html">usage page</a>.</li>
         </ul>
@@ -52,7 +60,7 @@
       </subsection>
       <subsection name="3.0.0">
         <p class="smallinfo">Release Date: 1 November 2018</p>
-        <p><a href="https://issues.onehippo.com/browse/HIPFORGE-231">HIPFORGE-231</a> Rebranding from Hippo to Bloomreach</p>
+        <p><a href="https://issues.onehippo.com/browse/FORGE-231">FORGE-231</a> Rebranding from Hippo to Bloomreach</p>
         <ul>
           <li>Logo change, plus adding a site icon link.</li>
           <li>Rename Maven groupId from <code>org.onehippo.forge.mavenskin</code> to <code>org.bloomreach.forge.mavenskin</code>,

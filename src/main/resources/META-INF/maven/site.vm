@@ -63,6 +63,7 @@
 #**##if( $headContent )$headContent#end
 #**##googleAnalytics( $decoration.googleAnalyticsAccountId )
 #**##flattrHead()
+#**##forkMeOnGitHubHead()
 </head>
 #**##if ( $decoration.custom.getChild( 'bloomreach' )
 && $decoration.custom.getChild( 'bloomreach' ).getChild( 'topBarEnabled' )
@@ -232,7 +233,7 @@
 
   <div id="breadcrumbs">
     #set ($breadcrumbLink1 = 'xmdocumentation.bloomreach.com')
-    #set ($breadcrumbLink2 = 'developers.bloomreach.com')
+    #set ($breadcrumbLink2 = 'github.com/bloomreach-forge')
     #if ($decoration.custom.getChild('bloomreach'))
       #if ($decoration.custom.getChild('bloomreach').getChild('breadcrumbLink1') )
         #set ($breadcrumbLink1 = $decoration.custom.getChild('bloomreach').getChild('breadcrumbLink1').getValue())
