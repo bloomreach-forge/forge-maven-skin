@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  Copyright 2012-2023 Bloomreach, Inc.
+  Copyright 2026 Bloomreach, Inc.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -20,6 +20,13 @@
   </properties>
   <body>
     <section name="Release Notes">
+      <subsection name="3.2.2">
+        <p class="smallinfo">Release Date: 5 June 2026</p>
+        <ul>
+          <li><a href="https://issues.onehippo.com/browse/FORGE-582">FORGE-582</a>
+            Fixed dates and various plugin upgrades</li>
+        </ul>
+      </subsection>
       <subsection name="3.2.1">
         <p class="smallinfo">Release Date: 30 June 2023</p>
         <ul>

@@ -20,7 +20,7 @@
   <name>Bloomreach Forge Maven Skin</name>
   <groupId>org.bloomreach.forge.mavenskin</groupId>
   <artifactId>forge-maven-skin</artifactId>
-  <version>3.2.1</version>
+  <version>3.2.2</version>
 
   <inceptionYear>2012</inceptionYear>
 
@@ -77,8 +77,8 @@
   <properties>
     <bootstrap.version>2.3.2</bootstrap.version>
     <jquery.version>1.11.2</jquery.version>
-    <site-plugin.version>3.12.0</site-plugin.version>
-    <project-info-reports-plugin.version>3.3.0</project-info-reports-plugin.version>
+    <site-plugin.version>3.21.0</site-plugin.version>
+    <project-info-reports-plugin.version>3.9.0</project-info-reports-plugin.version>
     <minify-maven-plugin.version>1.7.6</minify-maven-plugin.version>
     <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
   </properties>
@@ -137,6 +137,13 @@
         <groupId>com.samaxes.maven</groupId>
         <artifactId>minify-maven-plugin</artifactId>
         <version>${minify-maven-plugin.version}</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
+            <version>4.0.3</version>
+          </dependency>
+        </dependencies>
         <executions>
           <execution>
             <id>default-minify</id>
